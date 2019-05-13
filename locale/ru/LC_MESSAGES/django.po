@@ -1,0 +1,195 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 12:24+0000\n"
+"PO-Revision-Date: 2019-05-11 12:26+0000\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.9.2\n"
+
+#: main/apps.py:6 main/apps.py:7
+msgid "main"
+msgstr "главная"
+
+#: main/apps.py:8
+msgid "mains"
+msgstr "главные"
+
+#: main/models.py:7 main/models.py:22 main/models.py:37
+msgid "name"
+msgstr "имя"
+
+#: main/models.py:8
+#| msgid "annotation"
+msgid "annotation"
+msgstr "аннотация"
+
+#: main/models.py:9 main/models.py:23
+msgid "content"
+msgstr "контент"
+
+#: main/models.py:11 main/models.py:24
+msgid "date"
+msgstr "дата"
+
+#: main/models.py:14
+msgid "Post"
+msgstr "пост"
+
+#: main/models.py:15
+msgid "Posts"
+msgstr "посты"
+
+#: main/models.py:25
+msgid "date of expire"
+msgstr "дата истекания"
+
+#: main/models.py:28
+msgid "Notification"
+msgstr "уведомление"
+
+#: main/models.py:29
+msgid "Notifications"
+msgstr "уведомления"
+
+#: main/models.py:39
+msgid "Necessary"
+msgstr "требуется"
+
+#: main/models.py:40
+msgid "Optional"
+msgstr "опционально"
+
+#: main/models.py:42
+msgid "type"
+msgstr "тип"
+
+#: main/models.py:43
+msgid "term"
+msgstr "семестр"
+
+#: main/models.py:46
+msgid "Lesson"
+msgstr "урок"
+
+#: main/models.py:47
+msgid "Lessons"
+msgstr "уроки"
+
+#: template/admin/base_site.html:32
+msgid "Documentation"
+msgstr "документация"
+
+#: template/admin/base_site.html:36
+msgid "Change password"
+msgstr "изменить пароль"
+
+#: template/admin/base_site.html:38
+msgid "Log out"
+msgstr "выйти"
+
+#: ume/settings.py:128
+msgid "English"
+msgstr "английский"
+
+#: ume/settings.py:129
+msgid "Russian"
+msgstr "русский"
+
+#: users/admin.py:12
+msgid "Personal info"
+msgstr "персональная информация"
+
+#: users/models.py:8
+msgid "ID"
+msgstr "ID"
+
+#: users/models.py:9
+msgid "is teacher"
+msgstr "является учителем"
+
+#: users/models.py:10
+msgid "is student"
+msgstr "является студентом"
+
+#: users/models.py:18 users/models.py:19
+msgid "degree"
+msgstr " степень"
+
+#: users/models.py:21 users/models.py:47
+msgid "First course"
+msgstr "первый курс"
+
+#: users/models.py:22 users/models.py:48
+msgid "Second course"
+msgstr "второй курс"
+
+#: users/models.py:23 users/models.py:49
+msgid "Third course"
+msgstr " третий курс"
+
+#: users/models.py:24 users/models.py:50
+msgid "Fourth course"
+msgstr "четвертый курс"
+
+#: users/models.py:26
+msgid "own group"
+msgstr "группа"
+
+#: users/models.py:29 users/models.py:56
+msgid ""
+"Phone number must be entered in the format: '+996999999'. Up to 15 digits "
+"allowed"
+msgstr "номера должны вводится в формате: '+996999999'. До 15 символов"
+
+#: users/models.py:32 users/models.py:59
+msgid "Please type in the correct format."
+msgstr "Пожалюйста вводите в правильном формате"
+
+#: users/models.py:33 users/models.py:60
+msgid "phone"
+msgstr "телефон"
+
+#: users/models.py:34 users/models.py:61
+msgid "father"
+msgstr "Отец"
+
+#: users/models.py:35 users/models.py:62
+msgid "mother"
+msgstr "Мать"
+
+#: users/models.py:36 users/models.py:63
+msgid "address"
+msgstr "адрес"
+
+#: users/models.py:37 users/models.py:64
+msgid "home address"
+msgstr "Домашний адрес"
+
+#: users/models.py:52
+msgid "course"
+msgstr "курс"
+
+#: users/models.py:53
+msgid "curator"
+msgstr "куратор"
+
+#: users/models.py:67
+msgid "Student"
+msgstr "студент"
+
+#: users/models.py:68
+msgid "Students"
+msgstr "студенты"

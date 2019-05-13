@@ -1,0 +1,39 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+{% load i18n %}
+
+<!-- custom filter module -->
+{% block extrahead %}
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/custom_admin.css' %}"/>
+{% endblock %}
+
+{% block userlinks %}
+    {% get_available_languages as langs %}
+    {% get_current_language as curr %}
+{#    <div class="uk-inline">#}
+{#        <a>{{ curr }}</a>#}
+{#        <div uk-dropdown="mode: click" style="min-width: 50px;">#}
+            {% for lang, val in langs %}
+                {% ifnotequal lang curr %}
+                    <a style="border-right: none; padding: 0; margin: 0; "
+                       href="{% url 'lang' lang %}">
+                        {{ lang }} /
+{#                                                            <img class="i18n_flag" src="{% static url %}images/flag-{{ lang }}-16.png"/>#}
+                    </a>
+                {% endifnotequal %}
+            {% endfor %}
+
+{#        </div>#}
+{#    </div>#}
+    {% if user.is_active and user.is_staff %}
+        {% url 'django-admindocs-docroot' as docsroot %}
+        {% if docsroot %}
+            <a href="{{ docsroot }}">{% trans 'Documentation' %}</a> /
+        {% endif %}
+    {% endif %}
+    {% if user.has_usable_password %}
+        <a href="{% url 'admin:password_change' %}">{% trans 'Change password' %}</a> /
+    {% endif %}
+    <a href="{% url 'admin:logout' %}">{% trans 'Log out' %}</a>
+{% endblock %}
