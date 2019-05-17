@@ -1,20 +1,22 @@
 {% extends 'base.html' %}
 {% load static %}
 {% load i18n %}
+{% block title %}
+    {% trans 'home' %}
+{% endblock %}
 {% block content %}
     <section class="slider">
         <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
                 {% for wallpaper in wallpaper_list %}
-                    <div class="item"><img alt="{{ wallpaper.image.url }}" src={{ walllpaper.image.url }}>
-
+                    <div class="item active"><img data-src="images/slider/image_1975x740.jpg" alt="Second slide"
+                                                  src="{{ wallpaper.image.url }}">
                         <div class="container">
                             <div class="carousel-caption">
-                                <h1>Vestibulum elementum vel ipsum sed.</h1>
-                                <p>Fringilla placerat. Etiam a dolor sit amet arcu convallis congue. Praesent nec magna
-                                    porta, sagittis tellus ut, rhoncus justo. Ut et porta turpis. Sed facilisis, justo
-                                    quis.</p>
-                                <p><a class="btn btn-default btn-lg" href="#" role="button">get started</a></p>
+                                <h1>Donec in metus quam nullam quis porta diam, sit amet tempor.</h1>
+                                <p><a class="btn btn-default btn-lg" href="#" role="button">Purchase</a><a
+                                        class="btn btn-default btn-lg" href="#" role="button">Details</a></p>
+                                <p>Quisque vestibulum odio at diam interdum, non ultrices lorem condimentum.</p>
                             </div>
                         </div>
                     </div>
@@ -26,109 +28,85 @@
                 class="glyphicon carousel-control-right"></span></a></div>
     </section>
     <!--end of slider section-->
-    <section class="main__middle__container homepage">
-        <div class="row text-center no-margin nothing headings">
-            <div class="container">
-                <h1 class="page_title">History</h1>
-                <p>Our department founded in 2003 and graduated about 500 students.</p>
-                <p><a class="btn btn-default btn-lg" href="#" role="button">read more</a></p>
+    <section class="main__middle__container">
+        <div class="container">
+            <div class="row with__sep">
+                <h3 class="text-center">Phasellus ultrices nulla quis nibh. Quisque a lectus. Lorem ipsum dolor sit amet
+                    ...</h3>
+                <p class="text-center big-paragraph">Suspendisse urna nibh, viverra non, semper suscipit, posuere a,
+                    pede.</p>
             </div>
-        </div>
-        <div class="row titles text-center">
-            <h2>More Features</h2>
-            <div class="separator"><img src="../static/images/sep.png" alt="sep"></div>
-            <p class="small-paragraph">Donec convallis, metus nec tempus aliquet</p>
+            <div class="row no_padding icons__blocks text-center">
+                <h2 class="page_title"><span>our services</span><br/>
+                    <span class="sep"></span><br/>
+                    <small>Cras ornare tristique elit</small>
+                </h2>
+                <div class="col-md-4">
+                    <h3>
+                        <small><a href="#">Creative Design</a></small>
+                    </h3>
+                    <p class="small-paragraph">Vestibulum auctor dapibus neque.</p>
+                    <img src="images/content__images/image_300x190.jpg" alt="image" class="img-responsive img-rounded">
+                    <p>Quisque et aliquam mauris. Nunc id cursus quam. Curabitur aliquam ornare ante et commodo. Nulla
+                        eu erat id massa egestas eleifend. Sed id venenatis.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>
+                        <small><a href="#">Multipurpose</a></small>
+                    </h3>
+                    <p class="small-paragraph">Vestibulum auctor dapibus neque.</p>
+                    <img src="images/content__images/image_300x190.jpg" alt="image" class="img-responsive img-rounded">
+                    <p>Quisque et aliquam mauris. Nunc id cursus quam. Curabitur aliquam ornare ante et commodo. Nulla
+                        eu erat id massa egestas eleifend. Sed id venenatis.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>
+                        <small><a href="#">Fully Responsive</a></small>
+                    </h3>
+                    <p class="small-paragraph">Vestibulum auctor dapibus neque.</p>
+                    <img src="images/content__images/image_300x190.jpg" alt="image" class="img-responsive img-rounded">
+                    <p>Quisque et aliquam mauris. Nunc id cursus quam. Curabitur aliquam ornare ante et commodo. Nulla
+                        eu erat id massa egestas eleifend. Sed id venenatis.</p>
+                </div>
+                <p><a href="#" class="btn btn-primary btn-lg">Learn more</a></p>
+            </div>
         </div>
         <div class="row grey-info-block text-center">
             <div class="container">
-                <div class="col-md-6">
-                    <h3><a href="#">{% trans 'Mathematics' %}.</a></h3>
-                    <img src="../static/images/content__images/image_460x230.jpg" alt="pic"
-                         class="img-rounded img-responsive" id="picture">
+                <h2 class="page_title"><span>about us</span><br/>
+                    <span class="sep"></span><br/>
+                    <small>Cras ornare tristique elit</small>
+                </h2>
+                <div class="col-md-6"><img src="images/content__images/image_460x200.jpg" alt="image"
+                                           class="img-rounded img-responsive">
+                    <h3>
+                        <small>Commodo id natoque malesuada</small>
+                    </h3>
+                    <p class="small-paragraph">Phasellus ultrices nulla quis nibh. Quisque a lectus.</p>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
                         eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit,
                         posuere a, pede.</p>
-                    <p><a class="btn btn-primary" href="#" role="button">Learn more</a></p>
                 </div>
-                <div class="col-md-6">
-                    <h3><a href="#">{% trans 'Informatics' %}</a></h3>
-                    <img src="../static/images/content__images/image_460x230.jpg" alt="pic"
-                         class="img-rounded img-responsive">
+                <div class="col-md-6"><img src="images/content__images/image_460x200.jpg" alt="image"
+                                           class="img-rounded img-responsive">
+                    <h3>
+                        <small>Auctor etiam porttitor phasellus</small>
+                    </h3>
+                    <p class="small-paragraph">Phasellus ultrices nulla quis nibh. Quisque a lectus.</p>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
                         eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit,
                         posuere a, pede.</p>
-                    <p><a class="btn btn-primary" href="#" role="button">Learn more</a></p>
                 </div>
+                <div class="clear"></div>
             </div>
         </div>
-        <div class="row titles greener text-center">
-            <h2>interior construction</h2>
-            <div class="separator"><img src="../static/images/sep_green.png" alt="sep"></div>
-            <p class="small-paragraph">Donec convallis, metus nec tempus aliquet</p>
-        </div>
-        <div class="row three__blocks text-center no_padding no-margin">
+        <div class="text-center three-blocks">
             <div class="container">
-                <div class="col-md-4">
-                    <h3><a href="#">Laboratuars</a></h3>
-                    <img src="../static/images/content__images/image_300x190.jpg" alt="image"
-                         class="img-responsive img-rounded">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
-                        eros. </p>
-                    <p><a class="btn btn-primary btn-md" href="#" role="button">Learn more</a>
-                </div>
-                <div class="col-md-4 middle">
-                    <h3><a href="#">Time Table</a></h3>
-                    <img src="../static/images/content__images/image_300x190.jpg" alt="image"
-                         class="img-responsive img-rounded">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
-                        eros. </p>
-                    <p><a class="btn btn-primary btn-md" href="#" role="button">Learn more</a>
-                </div>
-                <div class="col-md-4">
-                    <h3><a href="#">Support</a></h3>
-                    <img src="../static/images/content__images/image_300x190.jpg" alt="image"
-                         class="img-responsive img-rounded">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
-                        eros. </p>
-                    <p><a class="btn btn-primary btn-md" href="#" role="button">Learn more</a>
-                </div>
-            </div>
-        </div>
-        <div class="row text-center nothing line__bg testimonials">
-            <div class="container">
-                <h2 class="page_title">Graduators Said</h2>
-                <div id="myCarousel2" class="carousel slide carousel-fade" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel2" data-slide-to="1"></li>
-                        <li data-target="#myCarousel2" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <p>"Nullam malesuada erat ut turpis. Donec odio. Quisque volutpat mattis eros. Suspendisse
-                                urna
-                                nibh, viverra non, semper suscipit, posuere a, pede."</p>
-                            <p class="small-paragraph">
-                                <small>- Richard Johnson, Company Manager</small>
-                            </p>
-                        </div>
-                        <div class="item">
-                            <p>"Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse
-                                urna
-                                nibh, viverra non, semper suscipit, posuere a, pede."</p>
-                            <p class="small-paragraph">
-                                <small>- Tom Felix, Sales Consultant</small>
-                            </p>
-                        </div>
-                        <div class="item">
-                            <p>"Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna Donec
-                                odio.
-                                nibh, viverra non, semper suscipit, posuere a, pede."</p>
-                            <p class="small-paragraph">
-                                <small>- Sarah Jones, Web Manager</small>
-                            </p>
-                        </div>
-                    </div>
+                <div class="row">
+                    <h2 class="">Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
+                        vulputate sem tristique cursus.</h2>
+                    <p class="">Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel,
+                        velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna.</p>
                 </div>
             </div>
         </div>
@@ -147,18 +125,4 @@
         })
 
     </script>
-    <script type="text/javascript">
-        $("a.submenu").click(function () {
-            $(".menuBar").slideToggle("normal", function () {
-// Animation complete.
-            });
-        });
-        $("ul li.dropdown a").click(function () {
-            $("ul li.dropdown ul").slideToggle("normal", function () {
-// Animation complete.
-            });
-            $('ul li.dropdown').toggleClass('current');
-        });
-    </script>
 {% endblock %}
-

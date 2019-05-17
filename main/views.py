@@ -17,6 +17,5 @@ class IndexView(View):
     template_name = 'index.html'
 
     def get(self, request, *args, **kwargs):
-
         wallpaper_list = Wallpaper.objects.all()
         return render(request, 'index.html', locals())
