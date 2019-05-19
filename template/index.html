@@ -11,14 +11,14 @@
                 {% for wallpaper in wallpaper_list %}
                     <div class="item active"><img data-src="images/slider/image_1975x740.jpg" alt="Second slide"
                                                   src="{{ wallpaper.image.url }}">
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <h1>Donec in metus quam nullam quis porta diam, sit amet tempor.</h1>
-                                <p><a class="btn btn-default btn-lg" href="#" role="button">Purchase</a><a
-                                        class="btn btn-default btn-lg" href="#" role="button">Details</a></p>
-                                <p>Quisque vestibulum odio at diam interdum, non ultrices lorem condimentum.</p>
-                            </div>
-                        </div>
+                        <!-- <div class="container"> -->
+                            <!-- <div class="carousel-caption"> -->
+                                <!-- <h1>Donec in metus quam nullam quis porta diam, sit amet tempor.</h1> -->
+                                <!-- <p><a class="btn btn-default btn-lg" href="#" role="button">Purchase</a><a -->
+                                        <!-- class="btn btn-default btn-lg" href="#" role="button">Details</a></p> -->
+                                <!-- <p>Quisque vestibulum odio at diam interdum, non ultrices lorem condimentum.</p> -->
+                            <!-- </div> -->
+                        <!-- </div> -->
                     </div>
                 {% endfor %}
             </div>
@@ -31,43 +31,25 @@
     <section class="main__middle__container">
         <div class="container">
             <div class="row with__sep">
-                <h3 class="text-center">Phasellus ultrices nulla quis nibh. Quisque a lectus. Lorem ipsum dolor sit amet
-                    ...</h3>
-                <p class="text-center big-paragraph">Suspendisse urna nibh, viverra non, semper suscipit, posuere a,
-                    pede.</p>
+                <h3 class="text-center">{% trans 'Our department teach not only natural science but also modern technology' %}
+                    </h3>
+                <p class="text-center big-paragraph">{% trans 'Let you become a professional programmer with us' %}</p>
             </div>
             <div class="row no_padding icons__blocks text-center">
-                <h2 class="page_title"><span>our services</span><br/>
+                <h2 class="page_title"><span>{% trans 'your advantages with us' %}</span><br/>
                     <span class="sep"></span><br/>
-                    <small>Cras ornare tristique elit</small>
+                    <!-- <small>Cras ornare tristique elit</small> -->
                 </h2>
+                {% for advantage in advantage_list%}
                 <div class="col-md-4">
                     <h3>
-                        <small><a href="#">Creative Design</a></small>
+                        <small><a href="{{ advantage.absolute_url }}">{{ advantage.name }}</a></small>
                     </h3>
-                    <p class="small-paragraph">Vestibulum auctor dapibus neque.</p>
-                    <img src="images/content__images/image_300x190.jpg" alt="image" class="img-responsive img-rounded">
-                    <p>Quisque et aliquam mauris. Nunc id cursus quam. Curabitur aliquam ornare ante et commodo. Nulla
-                        eu erat id massa egestas eleifend. Sed id venenatis.</p>
+                    <!-- <p class="small-paragraph">Vestibulum auctor dapibus neque.</p> -->
+                    <img src="{{ advantage.image.url }}" alt="image" class="img-responsive img-rounded">
+                    <p>{{ advantage.annotation }}</p>
                 </div>
-                <div class="col-md-4">
-                    <h3>
-                        <small><a href="#">Multipurpose</a></small>
-                    </h3>
-                    <p class="small-paragraph">Vestibulum auctor dapibus neque.</p>
-                    <img src="images/content__images/image_300x190.jpg" alt="image" class="img-responsive img-rounded">
-                    <p>Quisque et aliquam mauris. Nunc id cursus quam. Curabitur aliquam ornare ante et commodo. Nulla
-                        eu erat id massa egestas eleifend. Sed id venenatis.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>
-                        <small><a href="#">Fully Responsive</a></small>
-                    </h3>
-                    <p class="small-paragraph">Vestibulum auctor dapibus neque.</p>
-                    <img src="images/content__images/image_300x190.jpg" alt="image" class="img-responsive img-rounded">
-                    <p>Quisque et aliquam mauris. Nunc id cursus quam. Curabitur aliquam ornare ante et commodo. Nulla
-                        eu erat id massa egestas eleifend. Sed id venenatis.</p>
-                </div>
+                {% endfor %}
                 <p><a href="#" class="btn btn-primary btn-lg">Learn more</a></p>
             </div>
         </div>

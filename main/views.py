@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.views import View
 from django.views.generic import TemplateView
 
-from main.models import Wallpaper
+from main.models import Wallpaper, Post
 
 
 class LanguageView(View):
@@ -18,4 +18,5 @@ class IndexView(View):
 
     def get(self, request, *args, **kwargs):
         wallpaper_list = Wallpaper.objects.all()
+        advantage_list = Post.objects.filter(name='advantage').first()
         return render(request, 'index.html', locals())
