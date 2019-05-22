@@ -1,7 +1,7 @@
 from modeltranslation.decorators import register
 from modeltranslation.translator import TranslationOptions
 
-from main.models import Post, Notification, Lesson, Wallpaper
+from main.models import Post, Notification, Lesson
 
 
 @register(Post)

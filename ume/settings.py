@@ -112,7 +112,7 @@ AUTH_USER_MODEL = 'users.User'
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
 
-# gettext = lambda s: s
+gettext = lambda s: s
 
 
 TIME_ZONE = 'UTC'
