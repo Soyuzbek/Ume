@@ -3,7 +3,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
-from main.views import LanguageView, IndexView
+from main.views import LanguageView, IndexView, StudentSignUpView, TeacherSignUpView, SignUpView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -12,8 +12,10 @@ urlpatterns = [
     path('translate/', include('rosetta.urls')),
     path('', IndexView.as_view(), name='home'),
     path('ckeditor/', include('ckeditor_uploader.urls')),
-
-# url(r'^ckeditor/', include('ckeditor_uploader.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('accounts/signup/', SignUpView.as_view(), name='signup'),
+    path('accounts/signup/student/', StudentSignUpView.as_view(), name='student_signup'),
+    path('accounts/signup/teacher/', TeacherSignUpView.as_view(), name='teacher_signup'),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
