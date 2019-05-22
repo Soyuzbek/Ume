@@ -11,6 +11,9 @@ urlpatterns = [
     path('lang/<str:lang>', LanguageView.as_view(), name='lang'),
     path('translate/', include('rosetta.urls')),
     path('', IndexView.as_view(), name='home'),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
+
+# url(r'^ckeditor/', include('ckeditor_uploader.urls')),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

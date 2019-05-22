@@ -1,3 +1,4 @@
+from ckeditor.fields import RichTextField
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
@@ -6,7 +7,7 @@ from django.utils.translation import ugettext_lazy as _
 class Post(models.Model):
     name = models.CharField(_('name'), max_length=255)
     annotation = models.TextField(_('annotation'))
-    content = models.TextField(_('content'))
+    content = RichTextField()
     author = models.ForeignKey('users.User', on_delete=models.DO_NOTHING)
     date = models.DateTimeField(_('date'), auto_now=True)
 
@@ -20,7 +21,7 @@ class Post(models.Model):
 
 class Notification(models.Model):
     name = models.TextField(_('name'))
-    content = models.TextField(_('content'))
+    content = RichTextField()
     date = models.DateTimeField(_('date'), auto_now=True)
     expire = models.DateTimeField(_('date of expire'))
 
