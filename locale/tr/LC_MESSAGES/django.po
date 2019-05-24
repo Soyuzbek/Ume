@@ -2,21 +2,22 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-24 09:29+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2019-05-24 11:25+0000\n"
+"Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.9.2\n"
 
 #: .\env\Lib\site-packages\ckeditor_uploader\forms.py:8
 msgid "Search files"
@@ -79,8 +80,8 @@ msgstr ""
 
 #: .\env\Lib\site-packages\django\core\validators.py:246
 msgid ""
-"Enter a valid 'slug' consisting of Unicode letters, numbers, underscores, or "
-"hyphens."
+"Enter a valid 'slug' consisting of Unicode letters, numbers, underscores, or"
+" hyphens."
 msgstr ""
 
 #: .\env\Lib\site-packages\django\core\validators.py:255
@@ -281,15 +282,15 @@ msgstr ""
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1290
 #, python-format
 msgid ""
-"'%(value)s' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
-"uuuuuu]][TZ] format."
+"'%(value)s' value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
 msgstr ""
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1294
 #, python-format
 msgid ""
-"'%(value)s' value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
-"[TZ]) but it is an invalid date/time."
+"'%(value)s' value has the correct format (YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
 msgstr ""
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1298
@@ -308,8 +309,8 @@ msgstr ""
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1587
 #, python-format
 msgid ""
-"'%(value)s' value has an invalid format. It must be in [DD] [HH:[MM:]]ss[."
-"uuuuuu] format."
+"'%(value)s' value has an invalid format. It must be in [DD] "
+"[HH:[MM:]]ss[.uuuuuu] format."
 msgstr ""
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1590
@@ -443,7 +444,8 @@ msgid "Many-to-many relationship"
 msgstr ""
 
 #. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the label
+#. characters will prevent the default label_suffix to be appended to the
+#. label
 #: .\env\Lib\site-packages\django\forms\boundfield.py:146
 msgid ":?.!"
 msgstr ""
@@ -493,7 +495,8 @@ msgstr ""
 
 #: .\env\Lib\site-packages\django\forms\fields.py:536
 #, python-format
-msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid ""
+"Ensure this filename has at most %(max)d character (it has %(length)d)."
 msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
 msgstr[0] ""
@@ -594,7 +597,8 @@ msgid "The inline value did not match the parent instance."
 msgstr ""
 
 #: .\env\Lib\site-packages\django\forms\models.py:1158
-msgid "Select a valid choice. That choice is not one of the available choices."
+msgid ""
+"Select a valid choice. That choice is not one of the available choices."
 msgstr ""
 
 #: .\env\Lib\site-packages\django\forms\models.py:1272
@@ -1059,11 +1063,11 @@ msgstr ""
 
 #: .\env\Lib\site-packages\django\views\csrf.py:124
 msgid ""
-"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
-"including the 'Referrer-Policy: no-referrer' header, please remove them. The "
-"CSRF protection requires the 'Referer' header to do strict referer checking. "
-"If you're concerned about privacy, use alternatives like <a rel=\"noreferrer"
-"\" ...> for links to third-party sites."
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or"
+" including the 'Referrer-Policy: no-referrer' header, please remove them. "
+"The CSRF protection requires the 'Referer' header to do strict referer "
+"checking. If you're concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" ...> for links to third-party sites."
 msgstr ""
 
 #: .\env\Lib\site-packages\django\views\csrf.py:132
@@ -1114,8 +1118,8 @@ msgstr ""
 #: .\env\Lib\site-packages\django\views\generic\dates.py:589
 #, python-format
 msgid ""
-"Future %(verbose_name_plural)s not available because %(class_name)s."
-"allow_future is False."
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
 msgstr ""
 
 #: .\env\Lib\site-packages\django\views\generic\dates.py:623
@@ -1174,10 +1178,10 @@ msgstr ""
 #: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:368
 #, python-format
 msgid ""
-"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
-"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
-"\">DEBUG=True</a> is in your settings file and you have not configured any "
-"URLs."
+"You are seeing this page because <a "
+"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
+"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file "
+"and you have not configured any URLs."
 msgstr ""
 
 #: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:383
@@ -1306,11 +1310,11 @@ msgstr ""
 
 #: .\main\models.py:15
 msgid "Post"
-msgstr ""
+msgstr "Makale"
 
 #: .\main\models.py:16
 msgid "Posts"
-msgstr ""
+msgstr "Makaleler"
 
 #: .\main\models.py:26
 msgid "date of expire"
@@ -1318,11 +1322,11 @@ msgstr ""
 
 #: .\main\models.py:29
 msgid "Notification"
-msgstr ""
+msgstr "Duyuru"
 
 #: .\main\models.py:30
 msgid "Notifications"
-msgstr ""
+msgstr "Duyurular"
 
 #: .\main\models.py:40
 msgid "Necessary"
@@ -1338,39 +1342,39 @@ msgstr ""
 
 #: .\main\models.py:44
 msgid "term"
-msgstr ""
+msgstr "dönemi"
 
 #: .\main\models.py:47
 msgid "Lesson"
-msgstr ""
+msgstr "Ders"
 
 #: .\main\models.py:48
 msgid "Lessons"
-msgstr ""
+msgstr "Dersler"
 
 #: .\main\models.py:56
 msgid "image"
-msgstr ""
+msgstr "resim"
 
 #: .\main\models.py:59
 msgid "Wallpaper"
-msgstr ""
+msgstr "Duvar Kağıdı"
 
 #: .\template\admin\base_site.html:34
 msgid "Documentation"
-msgstr ""
+msgstr "Hüccetlendirme"
 
 #: .\template\admin\base_site.html:38
 msgid "Change password"
-msgstr ""
+msgstr "parolayı değiştir"
 
 #: .\template\admin\base_site.html:40
 msgid "Log out"
-msgstr ""
+msgstr "çıkış"
 
 #: .\template\index.html:5
 msgid "home"
-msgstr ""
+msgstr "Ev"
 
 #: .\template\index.html:34
 msgid ""
@@ -1387,81 +1391,81 @@ msgstr ""
 
 #: .\template\registration\login.html:5
 msgid "login"
-msgstr ""
+msgstr "gir"
 
 #: .\template\registration\signup.html:5
 #: .\template\registration\signup_form.html:5
 msgid "sign up"
-msgstr ""
+msgstr "hesap aç"
 
 #: .\template\registration\signup_form.html:12
 msgid "Username"
-msgstr ""
+msgstr "kullanıcı ismi"
 
 #: .\template\registration\signup_form.html:17
 msgid "Email"
-msgstr ""
+msgstr "email"
 
 #: .\template\registration\signup_form.html:23
 msgid "password"
-msgstr ""
+msgstr "parola"
 
 #: .\template\registration\signup_form.html:28
 #: .\template\registration\signup_form.html:33
 msgid "confirm password"
-msgstr ""
+msgstr "parolayı tasdik et"
 
 #: .\ume\settings.py:132
 msgid "English"
-msgstr ""
+msgstr "İngilizce"
 
 #: .\ume\settings.py:133
 msgid "Kirghiz"
-msgstr ""
+msgstr "Kırgız türkçesi"
 
 #: .\ume\settings.py:134
 msgid "Turkish"
-msgstr ""
+msgstr "Türkiye türkçesi"
 
 #: .\users\admin.py:12
 msgid "Personal info"
-msgstr ""
+msgstr "öz bilgileri"
 
 #: .\users\models.py:8
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: .\users\models.py:9
 msgid "is teacher"
-msgstr ""
+msgstr "öğretmen"
 
 #: .\users\models.py:10
 msgid "is student"
-msgstr ""
+msgstr "öğrenci"
 
 #: .\users\models.py:18 .\users\models.py:19
 msgid "degree"
-msgstr ""
+msgstr "mertebesi"
 
 #: .\users\models.py:21 .\users\models.py:47
 msgid "First course"
-msgstr ""
+msgstr "Birinci sınıf"
 
 #: .\users\models.py:22 .\users\models.py:48
 msgid "Second course"
-msgstr ""
+msgstr "İkinci sınıf"
 
 #: .\users\models.py:23 .\users\models.py:49
 msgid "Third course"
-msgstr ""
+msgstr "üçüncü sınıf"
 
 #: .\users\models.py:24 .\users\models.py:50
 msgid "Fourth course"
-msgstr ""
+msgstr "dördüncü sınıf"
 
 #: .\users\models.py:26
 msgid "own group"
-msgstr ""
+msgstr "öz sınıfı"
 
 #: .\users\models.py:29 .\users\models.py:56
 msgid ""
@@ -1475,36 +1479,36 @@ msgstr ""
 
 #: .\users\models.py:33 .\users\models.py:60
 msgid "phone"
-msgstr ""
+msgstr "numarası"
 
 #: .\users\models.py:34 .\users\models.py:61
 msgid "father"
-msgstr ""
+msgstr "babası"
 
 #: .\users\models.py:35 .\users\models.py:62
 msgid "mother"
-msgstr ""
+msgstr "annesi"
 
 #: .\users\models.py:36 .\users\models.py:63
 msgid "address"
-msgstr ""
+msgstr "adresi"
 
 #: .\users\models.py:37 .\users\models.py:64
 msgid "home address"
-msgstr ""
+msgstr "memleketi"
 
 #: .\users\models.py:52
 msgid "course"
-msgstr ""
+msgstr "sınıf"
 
 #: .\users\models.py:53
 msgid "curator"
-msgstr ""
+msgstr "danışman"
 
 #: .\users\models.py:67
 msgid "Student"
-msgstr ""
+msgstr "öğrenci"
 
 #: .\users\models.py:68
 msgid "Students"
-msgstr ""
+msgstr "öğrenciler"
