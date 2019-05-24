@@ -26,7 +26,9 @@ SECRET_KEY = '72rv48r@gh4@ngn_w5i8fb=6v$(i_eqyd$!rh9s@xpb34(jri)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '*'
+]
 
 
 # Application definition
@@ -46,6 +48,7 @@ INSTALLED_APPS = [
     'rosetta',
     'ckeditor',
     'ckeditor_uploader',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -171,3 +174,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # skeditor settings
 CKEDITOR_UPLOAD_PATH = "uploads/"
+
+GRAPH_MODELS = {
+  'all_applications': True,
+  'group_models': True,
+}
