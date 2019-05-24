@@ -131,25 +131,31 @@ USE_TZ = True
 LANGUAGES = (
     ('en', _('English')),
     ('ky', _('Kirghiz')),
+    ('tr', _('Turkish'))
 )
 LANGUAGE_CODE = 'en'
 MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'
 
-MODELTRANSLATION_LANGUAGES = ('en', 'ky')
+MODELTRANSLATION_LANGUAGES = ('en', 'tr', 'ky')
 
 MODELTRANSLATION_PREPOPULATE_LANGUAGE = 'en'
 
 MODELTRANSLATION_FALLBACK_LANGUAGES = {
-    'default': ('en', 'ru')
+    'default': ('en', 'tr')
 }
 
 MODELTRANSLATION_TRANSLATION_FILES = (
     'users.translation',
     'main.translation',
 )
-
+MY_PATH = os.path.join(BASE_DIR, 'env', 'Lib', 'site-packages')
 # translations
-LOCALE_PATH = os.path.join(BASE_DIR, 'locale')
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, 'locale'),
+    os.path.join(MY_PATH, 'admin_interface', 'locale'),
+    os.path.join(MY_PATH, 'django', 'conf', 'locale'),
+    os.path.join(MY_PATH, 'rosetta', 'locale'),
+]
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 

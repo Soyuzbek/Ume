@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 14:00+0600\n"
-"PO-Revision-Date: 2019-05-23 15:08+0000\n"
+"POT-Creation-Date: 2019-05-24 10:08+0600\n"
+"PO-Revision-Date: 2019-05-24 10:59+0000\n"
 "Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -22,6 +22,10 @@ msgstr ""
 #: .\env\Lib\site-packages\ckeditor_uploader\forms.py:8
 msgid "Search files"
 msgstr "файлдарды издөө"
+
+#: .\env\Lib\site-packages\colorfield\fields.py:13
+msgid "Enter a valid color."
+msgstr "Туура түс киргиз"
 
 #: .\env\Lib\site-packages\django\contrib\messages\apps.py:7
 msgid "Messages"
@@ -195,11 +199,11 @@ msgstr ""
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:105
 msgid "This field cannot be null."
-msgstr ""
+msgstr "Бул аймак жок маани албашы керек"
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:106
 msgid "This field cannot be blank."
-msgstr ""
+msgstr "Бул аймак бош калбашы керек"
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:107
 #, python-format
@@ -217,7 +221,7 @@ msgstr ""
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:128
 #, python-format
 msgid "Field of type: %(field_type)s"
-msgstr ""
+msgstr "аймактын түрү: %(field_type)s"
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:899
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1766
@@ -252,11 +256,11 @@ msgstr "Мантык (Туура же Ката)"
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1034
 #, python-format
 msgid "String (up to %(max_length)s)"
-msgstr ""
+msgstr "Сап (%(max_length)s чейин)"
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1098
 msgid "Comma-separated integers"
-msgstr ""
+msgstr "үтүр менен бөлүнгөн "
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1147
 #, python-format
@@ -330,15 +334,15 @@ msgstr ""
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1731
 msgid "Floating point number"
-msgstr ""
+msgstr "калкыган чекит саны"
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1860
 msgid "IPv4 address"
-msgstr ""
+msgstr "IPv4 дареги"
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1891
 msgid "IP address"
-msgstr ""
+msgstr "IP дареги"
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1971
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1972
@@ -361,7 +365,7 @@ msgstr "кичине оң сан"
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2036
 #, python-format
 msgid "Slug (up to %(max_length)s)"
-msgstr ""
+msgstr "слаг ( %(max_length)s чейин)"
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2068
 msgid "Small integer"
@@ -404,7 +408,7 @@ msgstr ""
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2308
 msgid "Universally unique identifier"
-msgstr ""
+msgstr "универсал уникал көрсөтүүчү"
 
 #: .\env\Lib\site-packages\django\db\models\fields\files.py:221
 msgid "File"
@@ -430,12 +434,12 @@ msgstr ""
 #: .\env\Lib\site-packages\django\db\models\fields\related.py:1057
 #, python-format
 msgid "%(from)s-%(to)s relationship"
-msgstr ""
+msgstr "%(from)s-%(to)s байланышы"
 
 #: .\env\Lib\site-packages\django\db\models\fields\related.py:1058
 #, python-format
 msgid "%(from)s-%(to)s relationships"
-msgstr ""
+msgstr "%(from)s-%(to)s байланыштары"
 
 #: .\env\Lib\site-packages\django\db\models\fields\related.py:1100
 msgid "Many-to-many relationship"
@@ -446,7 +450,7 @@ msgstr "көпкө-көп байланышы"
 #. label
 #: .\env\Lib\site-packages\django\forms\boundfield.py:146
 msgid ":?.!"
-msgstr ""
+msgstr ":?.!"
 
 #: .\env\Lib\site-packages\django\forms\fields.py:53
 msgid "This field is required."
@@ -565,8 +569,9 @@ msgid "Order"
 msgstr "Тартип"
 
 #: .\env\Lib\site-packages\django\forms\formsets.py:375
+#: .\env\Lib\site-packages\flat\templates\admin\related_widget_wrapper.html:23
 msgid "Delete"
-msgstr ""
+msgstr "Алып сал"
 
 #: .\env\Lib\site-packages\django\forms\models.py:751
 #, python-format
@@ -619,6 +624,8 @@ msgid "Currently"
 msgstr "Азыркы"
 
 #: .\env\Lib\site-packages\django\forms\widgets.py:397
+#: .\env\Lib\site-packages\flat\templates\admin\edit_inline\tabular.html:31
+#: .\env\Lib\site-packages\flat\templates\admin\related_widget_wrapper.html:9
 msgid "Change"
 msgstr "өзгөртүү"
 
@@ -654,22 +661,22 @@ msgstr ""
 #: .\env\Lib\site-packages\django\template\defaultfilters.py:838
 #, python-format
 msgid "%s MB"
-msgstr ""
+msgstr "%s мегабайт"
 
 #: .\env\Lib\site-packages\django\template\defaultfilters.py:840
 #, python-format
 msgid "%s GB"
-msgstr ""
+msgstr "%s гигабайт"
 
 #: .\env\Lib\site-packages\django\template\defaultfilters.py:842
 #, python-format
 msgid "%s TB"
-msgstr ""
+msgstr "%s терабайт"
 
 #: .\env\Lib\site-packages\django\template\defaultfilters.py:844
 #, python-format
 msgid "%s PB"
-msgstr ""
+msgstr "%s пикабайт"
 
 #: .\env\Lib\site-packages\django\utils\dateformat.py:62
 msgid "p.m."
@@ -713,7 +720,7 @@ msgstr "Бейшемби"
 
 #: .\env\Lib\site-packages\django\utils\dates.py:6
 msgid "Friday"
-msgstr ""
+msgstr "Жума"
 
 #: .\env\Lib\site-packages\django\utils\dates.py:7
 msgid "Saturday"
@@ -1048,6 +1055,9 @@ msgid ""
 "required for security reasons, to ensure that your browser is not being "
 "hijacked by third parties."
 msgstr ""
+"Сиз бул билдирүүнү HTTPS сайты 'Referer header' ди талап кылгандыгы үчүн "
+"көрүп жатасыз. Бул хэдэр үчүнчү жак тараптан кийлишпөөсү үчүн коопсуздуктан "
+"улам керек болот."
 
 #: .\env\Lib\site-packages\django\views\csrf.py:120
 msgid ""
@@ -1153,7 +1163,7 @@ msgstr "\"%(path)s\" табылган жок"
 #: .\env\Lib\site-packages\django\views\static.py:80
 #, python-format
 msgid "Index of %(directory)s"
-msgstr ""
+msgstr "%(directory)s индекстери"
 
 #: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:6
 msgid "Django: the Web framework for perfectionists with deadlines."
@@ -1202,6 +1212,84 @@ msgstr "Жанго жамааты"
 #: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:408
 msgid "Connect, get help, or contribute"
 msgstr "Туташ, жардам ал, же кошумчала"
+
+#: .\env\Lib\site-packages\flat\templates\admin\base_site.html:3
+#: .\env\Lib\site-packages\flat_responsive\templates\admin\base_site.html:4
+msgid "Django site admin"
+msgstr "Жанго башкаруу сайты"
+
+#: .\env\Lib\site-packages\flat\templates\admin\base_site.html:6
+#: .\env\Lib\site-packages\flat_responsive\templates\admin\base_site.html:7
+msgid "Django administration"
+msgstr "Жанго башкармасы"
+
+#: .\env\Lib\site-packages\flat\templates\admin\edit_inline\tabular.html:17
+msgid "Delete?"
+msgstr "Алып салалыбы?"
+
+#: .\env\Lib\site-packages\flat\templates\admin\edit_inline\tabular.html:33
+msgid "View on site"
+msgstr "Сайттан көрүү"
+
+#: .\env\Lib\site-packages\flat\templates\admin\edit_inline\tabular.html:79
+#, python-format
+msgid "Add another %(verbose_name)s"
+msgstr "Башка %(verbose_name)s кошуу"
+
+#: .\env\Lib\site-packages\flat\templates\admin\edit_inline\tabular.html:80
+msgid "Remove"
+msgstr "Алып салуу"
+
+#: .\env\Lib\site-packages\flat\templates\admin\related_widget_wrapper.html:8
+#, python-format
+msgid "Change selected %(model)s"
+msgstr "Тандалган %(model)s өзгөртүү"
+
+#: .\env\Lib\site-packages\flat\templates\admin\related_widget_wrapper.html:15
+#, python-format
+msgid "Add another %(model)s"
+msgstr "башка %(model)s кошуу"
+
+#: .\env\Lib\site-packages\flat\templates\admin\related_widget_wrapper.html:16
+msgid "Add"
+msgstr "Кошуу"
+
+#: .\env\Lib\site-packages\flat\templates\admin\related_widget_wrapper.html:22
+#, python-format
+msgid "Delete selected %(model)s"
+msgstr "Тандалган %(model)s алынсын"
+
+#: .\env\Lib\site-packages\flat\templates\admin\search_form.html:7
+msgid "Search"
+msgstr "Издөө"
+
+#: .\env\Lib\site-packages\flat\templates\admin\search_form.html:9
+#, python-format
+msgid "%(counter)s result"
+msgid_plural "%(counter)s results"
+msgstr[0] "%(counter)s жыйынтыгы"
+
+#: .\env\Lib\site-packages\flat\templates\admin\search_form.html:9
+#, python-format
+msgid "%(full_result_count)s total"
+msgstr "жалпы %(full_result_count)s"
+
+#: .\env\Lib\site-packages\flat\templates\admin\search_form.html:9
+msgid "Show all"
+msgstr "Баарын көрсөт"
+
+#: .\env\Lib\site-packages\flat\templates\gis\admin\openlayers.html:35
+#: .\env\Lib\site-packages\flat\templates\gis\openlayers.html:18
+msgid "Delete all Features"
+msgstr "Бүт касиеттерди алып сал"
+
+#: .\env\Lib\site-packages\flat\templates\gis\admin\openlayers.html:37
+msgid "WKT debugging window:"
+msgstr "WKT оңдоо терезеси"
+
+#: .\env\Lib\site-packages\flat\templates\gis\openlayers.html:19
+msgid "Debugging window (serialized value)"
+msgstr "оңдоо терезеси (кысымдалган маанилер)"
 
 #: .\env\Lib\site-packages\modeltranslation\widgets.py:25
 msgid "None"
@@ -1276,6 +1364,11 @@ msgstr "Сүрөт"
 msgid "Wallpaper"
 msgstr "Туш кагаз"
 
+#: .\main\models.py:60
+#| msgid "Wallpaper"
+msgid "Wallpapers"
+msgstr "Туш кагаздар"
+
 #: .\template\admin\base_site.html:34
 msgid "Documentation"
 msgstr "Иш кагаз"
@@ -1316,30 +1409,34 @@ msgstr "кирүү"
 msgid "sign up"
 msgstr "катталып кирүү"
 
-#: .\template\registration\signup_form.html:11
-msgid "registration"
-msgstr "катталуу"
-
-#: .\template\registration\signup_form.html:20
-#: .\template\registration\signup_form.html:22
+#: .\template\registration\signup_form.html:12
 msgid "Username"
 msgstr "колдонуучу аты"
 
-#: .\ume\settings.py:130
-msgid "English"
-msgstr "Англисче"
+#: .\template\registration\signup_form.html:17
+msgid "Email"
+msgstr "епочта"
 
-#: .\ume\settings.py:131
-msgid "Turkish"
-msgstr "Түркчө"
+#: .\template\registration\signup_form.html:23
+msgid "password"
+msgstr "сырсөз"
+
+#: .\template\registration\signup_form.html:28
+#: .\template\registration\signup_form.html:33
+msgid "confirm password"
+msgstr "сырсөз тастыктоо"
 
 #: .\ume\settings.py:132
-msgid "Kazakh"
-msgstr "Казакча"
+msgid "English"
+msgstr "Англисче"
 
 #: .\ume\settings.py:133
 msgid "Kirghiz"
 msgstr "Кыргызча"
+
+#: .\ume\settings.py:134
+msgid "Turkish"
+msgstr "Түркчө"
 
 #: .\users\admin.py:12
 msgid "Personal info"
@@ -1427,3 +1524,9 @@ msgstr "студент"
 #: .\users\models.py:68
 msgid "Students"
 msgstr "студенттер"
+
+#~ msgid "registration"
+#~ msgstr "катталуу"
+
+#~ msgid "Kazakh"
+#~ msgstr "Казакча"

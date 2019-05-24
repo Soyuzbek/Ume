@@ -57,6 +57,7 @@ class Wallpaper(models.Model):
 
     class Meta:
         verbose_name = _('Wallpaper')
+        verbose_name_plural = _('Wallpapers')
 
     def __str__(self):
         return self.name
