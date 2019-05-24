@@ -130,13 +130,12 @@ USE_TZ = True
 
 LANGUAGES = (
     ('en', _('English')),
-    ('ru', _('Russian')),
-    # ('kg', _('Kyrgyz')),
+    ('ky', _('Kirghiz')),
 )
 LANGUAGE_CODE = 'en'
 MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'
 
-MODELTRANSLATION_LANGUAGES = ('en', 'ru')
+MODELTRANSLATION_LANGUAGES = ('en', 'ky')
 
 MODELTRANSLATION_PREPOPULATE_LANGUAGE = 'en'
 
