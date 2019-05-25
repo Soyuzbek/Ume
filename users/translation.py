@@ -9,9 +9,11 @@ class UserTransOptions(TranslationOptions):
     # fields = (, )
     pass
 
+
 @register(Student)
 class StudentOptions(TranslationOptions):
     pass
+
 
 @register(Teacher)
 class TeacherOption(TranslationOptions):
