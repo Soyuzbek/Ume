@@ -24,7 +24,7 @@ class Teacher(models.Model):
         ('UME-IV', _('Fourth course'))
     )
     own_group = models.CharField(_('own group'), max_length=7, choices=GROUP_CHOICES, null=True, blank=True)
-    lessons = models.ManyToManyField('main.Lesson', 'lesson_list')
+    lessons = models.ManyToManyField('main.Lesson', 'lesson_list', verbose_name=_('lessons'))
     phone_regex_kg = RegexValidator(regex=r'^\+?996?\d{9,15}$',
                                     message=_("Phone number must be entered in the format:"
                                               " '+996999999'. Up to 15 digits allowed"))
@@ -36,6 +36,9 @@ class Teacher(models.Model):
     address = models.TextField(_('address'), null=True, blank=True)
     home_address = models.TextField(_('home address'), null=True, blank=True)
 
+    class Meta:
+        verbose_name = _('Teacher')
+        verbose_name_plural = _('Teachers')
     @staticmethod
     def get_absolute_url():
         return f'/users/user/{1}'

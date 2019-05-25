@@ -147,6 +147,22 @@ MODELTRANSLATION_FALLBACK_LANGUAGES = {
     'default': ('en', 'tr')
 }
 
+EXTRA_LANG_INFO = {
+    'ky': {
+        'bidi': False,
+        'code': 'ky',
+        'name': 'Kirghiz',
+        'name_local': u"Кыргызча",
+
+    },
+}
+# Add custom languages not provided by Django
+import django.conf.locale
+from django.conf import global_settings
+LANG_INFO = {**django.conf.locale.LANG_INFO, **EXTRA_LANG_INFO}
+django.conf.locale.LANG_INFO = LANG_INFO
+
+
 MODELTRANSLATION_TRANSLATION_FILES = (
     'users.translation',
     'main.translation',
@@ -155,9 +171,6 @@ MY_PATH = os.path.join(BASE_DIR, 'env', 'Lib', 'site-packages')
 # translations
 LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'locale'),
-    os.path.join(MY_PATH, 'admin_interface', 'locale'),
-    os.path.join(MY_PATH, 'django', 'conf', 'locale'),
-    os.path.join(MY_PATH, 'rosetta', 'locale'),
 ]
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/

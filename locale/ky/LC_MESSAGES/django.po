@@ -1,15 +1,15 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# THIS TRANSLATION CREATED FOR UME'S WEB SITE.
+# Copyright (C) 2019
+# This file is distributed under the same license as the UME package.
+# FIRST AUTHOR <soyuzbek196.kg@gmail.com>, 2019.
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-24 10:08+0600\n"
-"PO-Revision-Date: 2019-05-24 10:59+0000\n"
+"POT-Creation-Date: 2019-05-25 14:40+0600\n"
+"PO-Revision-Date: 2019-05-25 14:25+0000\n"
 "Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -66,52 +66,52 @@ msgstr "Туура URL киргиз"
 
 #: .\env\Lib\site-packages\django\core\validators.py:154
 msgid "Enter a valid integer."
-msgstr ""
+msgstr "Туура натурал сан тер."
 
 #: .\env\Lib\site-packages\django\core\validators.py:165
 msgid "Enter a valid email address."
-msgstr ""
+msgstr "Туура эдарек тер."
 
 #. Translators: "letters" means latin letters: a-z and A-Z.
 #: .\env\Lib\site-packages\django\core\validators.py:239
 msgid ""
 "Enter a valid 'slug' consisting of letters, numbers, underscores or hyphens."
-msgstr ""
+msgstr "Туура слаг (тамга, арип жана астсызык камтыган) тер"
 
 #: .\env\Lib\site-packages\django\core\validators.py:246
 msgid ""
-"Enter a valid 'slug' consisting of Unicode letters, numbers, underscores, or"
-" hyphens."
-msgstr ""
+"Enter a valid 'slug' consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr "Туура слаг (Йуникод тамгасын, арип, сызык жана астсызык камтыган) тер"
 
 #: .\env\Lib\site-packages\django\core\validators.py:255
 #: .\env\Lib\site-packages\django\core\validators.py:275
 msgid "Enter a valid IPv4 address."
-msgstr ""
+msgstr "Туура IPv4 тер."
 
 #: .\env\Lib\site-packages\django\core\validators.py:260
 #: .\env\Lib\site-packages\django\core\validators.py:276
 msgid "Enter a valid IPv6 address."
-msgstr ""
+msgstr "Туура IPv6 тер."
 
 #: .\env\Lib\site-packages\django\core\validators.py:270
 #: .\env\Lib\site-packages\django\core\validators.py:274
 msgid "Enter a valid IPv4 or IPv6 address."
-msgstr ""
+msgstr "Туура IPv4 же IPv6 тер."
 
 #: .\env\Lib\site-packages\django\core\validators.py:304
 msgid "Enter only digits separated by commas."
-msgstr ""
+msgstr "Жалаң үтүр менен бөлүнгөн сан тер."
 
 #: .\env\Lib\site-packages\django\core\validators.py:310
 #, python-format
 msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
-msgstr ""
+msgstr "Бул маани %(limit_value)s ашпоосун текшериңиз (азыр  %(show_value)s)"
 
 #: .\env\Lib\site-packages\django\core\validators.py:342
 #, python-format
 msgid "Ensure this value is less than or equal to %(limit_value)s."
-msgstr ""
+msgstr "%(limit_value)s карата кичине же барабар маани болгонун текшериңиз"
 
 #: .\env\Lib\site-packages\django\core\validators.py:351
 #, python-format
@@ -129,7 +129,7 @@ msgid_plural ""
 msgstr[0] ""
 "Бул маани жок дегенде %(limit_value)d сандан турушу керек (азыркысы "
 "%(show_value)d)."
-msgstr[1] ""
+msgstr[1] "Жок дегенде %(limit_value)d сан болуусу керек (азыр %(show_value)d)"
 
 #: .\env\Lib\site-packages\django\core\validators.py:376
 #, python-format
@@ -140,7 +140,8 @@ msgid_plural ""
 "Ensure this value has at most %(limit_value)d characters (it has "
 "%(show_value)d)."
 msgstr[0] ""
-msgstr[1] ""
+"Бул маани %(limit_value)d дан аз  болуу керек  (азыр %(show_value)d)"
+msgstr[1] "%(limit_value)d дан аз  болуу керек  (азыр %(show_value)d)"
 
 #: .\env\Lib\site-packages\django\core\validators.py:395
 #: .\env\Lib\site-packages\django\forms\fields.py:290
@@ -153,14 +154,14 @@ msgstr "Сан киргиз."
 msgid "Ensure that there are no more than %(max)s digit in total."
 msgid_plural "Ensure that there are no more than %(max)s digits in total."
 msgstr[0] ""
-msgstr[1] ""
+msgstr[1] "Жалпысынан %(max)s орундуу сандар болуусун текшериңиз."
 
 #: .\env\Lib\site-packages\django\core\validators.py:402
 #, python-format
 msgid "Ensure that there are no more than %(max)s decimal place."
 msgid_plural "Ensure that there are no more than %(max)s decimal places."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Жалпысынан %(max)s ондук сан болуусун текшериңиз."
+msgstr[1] "Жалпысынан %(max)s ондук сандар болуусун текшериңиз."
 
 #: .\env\Lib\site-packages\django\core\validators.py:407
 #, python-format
@@ -168,8 +169,8 @@ msgid ""
 "Ensure that there are no more than %(max)s digit before the decimal point."
 msgid_plural ""
 "Ensure that there are no more than %(max)s digits before the decimal point."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ондук чекитке чейин %(max)s сан болуусун текшериңиз."
+msgstr[1] "ондук чекитке чейин %(max)s сандар болуусун текшериңиз."
 
 #: .\env\Lib\site-packages\django\core\validators.py:469
 #, python-format
@@ -177,6 +178,8 @@ msgid ""
 "File extension '%(extension)s' is not allowed. Allowed extensions are: "
 "'%(allowed_extensions)s'."
 msgstr ""
+"кеңейтүүсү  '%(extension)s'  болгон файлдар кабыл алынбайт. "
+"'%(allowed_extensions)s' кабыл алынат."
 
 #: .\env\Lib\site-packages\django\core\validators.py:521
 msgid "Null characters are not allowed."
@@ -284,15 +287,15 @@ msgstr "Күн (убакытсыз)"
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1290
 #, python-format
 msgid ""
-"'%(value)s' value has an invalid format. It must be in YYYY-MM-DD "
-"HH:MM[:ss[.uuuuuu]][TZ] format."
+"'%(value)s' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
 msgstr ""
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1294
 #, python-format
 msgid ""
-"'%(value)s' value has the correct format (YYYY-MM-DD "
-"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
+"'%(value)s' value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
 msgstr ""
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1298
@@ -311,8 +314,8 @@ msgstr "ондук сан"
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1587
 #, python-format
 msgid ""
-"'%(value)s' value has an invalid format. It must be in [DD] "
-"[HH:[MM:]]ss[.uuuuuu] format."
+"'%(value)s' value has an invalid format. It must be in [DD] [HH:[MM:]]ss[."
+"uuuuuu] format."
 msgstr ""
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1590
@@ -446,8 +449,7 @@ msgid "Many-to-many relationship"
 msgstr "көпкө-көп байланышы"
 
 #. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the
-#. label
+#. characters will prevent the default label_suffix to be appended to the label
 #: .\env\Lib\site-packages\django\forms\boundfield.py:146
 msgid ":?.!"
 msgstr ":?.!"
@@ -497,8 +499,7 @@ msgstr ""
 
 #: .\env\Lib\site-packages\django\forms\fields.py:536
 #, python-format
-msgid ""
-"Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
 msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
 msgstr[0] ""
@@ -599,8 +600,7 @@ msgid "The inline value did not match the parent instance."
 msgstr ""
 
 #: .\env\Lib\site-packages\django\forms\models.py:1158
-msgid ""
-"Select a valid choice. That choice is not one of the available choices."
+msgid "Select a valid choice. That choice is not one of the available choices."
 msgstr "Туура тандоо кылыңыз. Ал тандоо мүмкүнчүлүктөн сырткары."
 
 #: .\env\Lib\site-packages\django\forms\models.py:1272
@@ -1068,11 +1068,11 @@ msgstr ""
 
 #: .\env\Lib\site-packages\django\views\csrf.py:124
 msgid ""
-"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or"
-" including the 'Referrer-Policy: no-referrer' header, please remove them. "
-"The CSRF protection requires the 'Referer' header to do strict referer "
-"checking. If you're concerned about privacy, use alternatives like <a "
-"rel=\"noreferrer\" ...> for links to third-party sites."
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the 'Referrer-Policy: no-referrer' header, please remove them. The "
+"CSRF protection requires the 'Referer' header to do strict referer checking. "
+"If you're concerned about privacy, use alternatives like <a rel=\"noreferrer"
+"\" ...> for links to third-party sites."
 msgstr ""
 
 #: .\env\Lib\site-packages\django\views\csrf.py:132
@@ -1123,8 +1123,8 @@ msgstr "%(verbose_name_plural)s жок"
 #: .\env\Lib\site-packages\django\views\generic\dates.py:589
 #, python-format
 msgid ""
-"Future %(verbose_name_plural)s not available because "
-"%(class_name)s.allow_future is False."
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
 msgstr ""
 
 #: .\env\Lib\site-packages\django\views\generic\dates.py:623
@@ -1183,10 +1183,10 @@ msgstr "Орнотуу ийгиликтүү аяктады! Куттуу бол�
 #: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:368
 #, python-format
 msgid ""
-"You are seeing this page because <a "
-"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
-"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file "
-"and you have not configured any URLs."
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
+"\">DEBUG=True</a> is in your settings file and you have not configured any "
+"URLs."
 msgstr ""
 
 #: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:383
@@ -1365,7 +1365,6 @@ msgid "Wallpaper"
 msgstr "Туш кагаз"
 
 #: .\main\models.py:60
-#| msgid "Wallpaper"
 msgid "Wallpapers"
 msgstr "Туш кагаздар"
 
@@ -1426,21 +1425,25 @@ msgstr "сырсөз"
 msgid "confirm password"
 msgstr "сырсөз тастыктоо"
 
-#: .\ume\settings.py:132
+#: .\ume\settings.py:135
 msgid "English"
 msgstr "Англисче"
 
-#: .\ume\settings.py:133
+#: .\ume\settings.py:136
 msgid "Kirghiz"
 msgstr "Кыргызча"
 
-#: .\ume\settings.py:134
+#: .\ume\settings.py:137
 msgid "Turkish"
 msgstr "Түркчө"
 
-#: .\users\admin.py:12
+#: .\users\admin.py:11
 msgid "Personal info"
 msgstr "өздүк маалымат"
+
+#: .\users\apps.py:6 .\users\apps.py:9
+msgid "users"
+msgstr "колдонуучулар"
 
 #: .\users\models.py:8
 msgid "ID"
@@ -1458,19 +1461,19 @@ msgstr "студент"
 msgid "degree"
 msgstr "даражасы"
 
-#: .\users\models.py:21 .\users\models.py:47
+#: .\users\models.py:21 .\users\models.py:50
 msgid "First course"
 msgstr "Биринчи курс"
 
-#: .\users\models.py:22 .\users\models.py:48
+#: .\users\models.py:22 .\users\models.py:51
 msgid "Second course"
 msgstr "экинчи курс"
 
-#: .\users\models.py:23 .\users\models.py:49
+#: .\users\models.py:23 .\users\models.py:52
 msgid "Third course"
 msgstr "үчүнчү курс"
 
-#: .\users\models.py:24 .\users\models.py:50
+#: .\users\models.py:24 .\users\models.py:53
 msgid "Fourth course"
 msgstr "төртүнчү курс"
 
@@ -1478,50 +1481,64 @@ msgstr "төртүнчү курс"
 msgid "own group"
 msgstr "өз  тайпасы"
 
-#: .\users\models.py:29 .\users\models.py:56
+#: .\users\models.py:27
+#, fuzzy
+#| msgid "Lessons"
+msgid "lessons"
+msgstr "Сабактар"
+
+#: .\users\models.py:29 .\users\models.py:59
 msgid ""
 "Phone number must be entered in the format: '+996999999'. Up to 15 digits "
 "allowed"
 msgstr ""
 "уюлдук номуру +996999999 калыбында болуу керек. он беш сифра киргизиңиз."
 
-#: .\users\models.py:32 .\users\models.py:59
+#: .\users\models.py:32 .\users\models.py:62
 msgid "Please type in the correct format."
 msgstr " Сураныч туура калыпта киргизиңиз."
 
-#: .\users\models.py:33 .\users\models.py:60
+#: .\users\models.py:33 .\users\models.py:63
 msgid "phone"
 msgstr "номур"
 
-#: .\users\models.py:34 .\users\models.py:61
+#: .\users\models.py:34 .\users\models.py:64
 msgid "father"
 msgstr "атасы"
 
-#: .\users\models.py:35 .\users\models.py:62
+#: .\users\models.py:35 .\users\models.py:65
 msgid "mother"
 msgstr "апасы"
 
-#: .\users\models.py:36 .\users\models.py:63
+#: .\users\models.py:36 .\users\models.py:66
 msgid "address"
 msgstr "дарек"
 
-#: .\users\models.py:37 .\users\models.py:64
+#: .\users\models.py:37 .\users\models.py:67
 msgid "home address"
 msgstr "дареги"
 
-#: .\users\models.py:52
+#: .\users\models.py:40
+msgid "Teacher"
+msgstr "мугалим"
+
+#: .\users\models.py:41
+msgid "Teachers"
+msgstr "мугалимдер"
+
+#: .\users\models.py:55
 msgid "course"
 msgstr "курс"
 
-#: .\users\models.py:53
+#: .\users\models.py:56
 msgid "curator"
 msgstr "жетекчи"
 
-#: .\users\models.py:67
+#: .\users\models.py:70
 msgid "Student"
 msgstr "студент"
 
-#: .\users\models.py:68
+#: .\users\models.py:71
 msgid "Students"
 msgstr "студенттер"
 
