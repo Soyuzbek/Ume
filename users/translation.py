@@ -12,7 +12,7 @@ class UserTransOptions(TranslationOptions):
 
 @register(Student)
 class StudentOptions(TranslationOptions):
-    pass
+    fields = ('father', 'mother', 'address', 'home_address')
 
 
 @register(Teacher)

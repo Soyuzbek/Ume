@@ -3,10 +3,22 @@ from django.contrib.auth.admin import UserAdmin
 from modeltranslation.admin import TabbedTranslationAdmin
 
 from main.models import Post, Notification, Lesson, Wallpaper
+# from users.models import Student, StudentLesson
+
+
+#
+# class StudentAdmin(admin.StackedInline):
+#     model = Student
+from users.models import Student
+
+
+class StudLesson(admin.TabularInline):
+    model = Student.lessons.through
+    extra = 1
 
 
 @admin.register(Post)
-class StudentAdmin(TabbedTranslationAdmin):
+class PostAdmin(TabbedTranslationAdmin):
     pass
 
 
@@ -17,6 +29,7 @@ class NotAdmin(TabbedTranslationAdmin):
 
 @admin.register(Lesson)
 class LessonAdmin(TabbedTranslationAdmin):
+    inlines = [StudLesson]
     pass
 
 

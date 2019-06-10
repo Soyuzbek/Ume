@@ -49,12 +49,14 @@
                             </ul>
                         </div>
                     </li>
-                    <li><a href="left_sidebar.html">left sidebar</a></li>
-                    <li><a href="right_sidebar.html">right sidebar</a></li>
+                    <li><a href="{% url 'students' %}">students</a></li>
+                    <li><a href="{% url 'lessons' %}">lessons</a></li>
                     {% if user.is_authenticated %}
-                    <li><a href="profile.html"">profile</a></li>
+                        <li><a href="profile.html"">profile</a></li>
+                        <li><a href="{% url 'logout' %}">logout</a></li>
                     {% else %}
-                    <li><a href="{% url 'signup' %}">sign up</a></li>
+                        <li><a href="{% url 'signup' %}">sign up</a></li>
+                        <li><a href="{% url 'login' %}">login</a></li>
                     {% endif %}
                     <li><a href="contact.html">contact us</a></li>
                 </ul>

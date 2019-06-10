@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'users',
+    'debug_toolbar',
     'rosetta',
     'ckeditor',
     'ckeditor_uploader',
@@ -56,6 +57,7 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -122,7 +124,7 @@ AUTH_USER_MODEL = 'users.User'
 gettext = lambda s: s
 
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Bishkek'
 
 USE_I18N = True
 
@@ -188,7 +190,53 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # skeditor settings
 CKEDITOR_UPLOAD_PATH = "uploads/"
 
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+        'height': 300,
+        'width': 850,
+        'config.language': 'ky',
+    },
+
+}
+
 GRAPH_MODELS = {
   'all_applications': True,
   'group_models': True,
 }
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'noreply.leti.kg@gmail.com'
+# EMAIL_HOST_USER = 'bilgi.oidb@manas.edu.kg'
+EMAIL_HOST_PASSWORD = 'Sherlocked'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_RECEIVERS = [
+    'soyuzbek196.kg@gmail.com'
+]
+
+
+DEBUG_TOOLBAR_PANELS = [
+    'debug_toolbar.panels.versions.VersionsPanel',
+    'debug_toolbar.panels.timer.TimerPanel',
+    'debug_toolbar.panels.settings.SettingsPanel',
+    'debug_toolbar.panels.headers.HeadersPanel',
+    'debug_toolbar.panels.request.RequestPanel',
+    'debug_toolbar.panels.sql.SQLPanel',
+    'debug_toolbar.panels.staticfiles.StaticFilesPanel',
+    'debug_toolbar.panels.templates.TemplatesPanel',
+    'debug_toolbar.panels.cache.CachePanel',
+    'debug_toolbar.panels.signals.SignalsPanel',
+    'debug_toolbar.panels.logging.LoggingPanel',
+    'debug_toolbar.panels.redirects.RedirectsPanel',
+]
+
+# This example is unlikely to be appropriate for your project.
+CONFIG_DEFAULTS = {
+    # Toolbar options
+    'RESULTS_CACHE_SIZE': 3,
+    'SHOW_COLLAPSED': True,
+    # Panel options
+    'SQL_WARNING_THRESHOLD': 100,   # milliseconds
+}
+INTERNAL_IPS = '127.0.0.1'

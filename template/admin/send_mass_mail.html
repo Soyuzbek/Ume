@@ -1,0 +1,44 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+{% load i18n %}
+<!-- custom filter module -->
+{% block extrahead %}
+{#    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}"/>#}
+{#    <link rel="stylesheet" type="text/css" href="{% static 'css/custom_admin.css' %}"/>#}
+    <script>window.CKEDITOR_BASEPATH = '/static/ckeditor/ckeditor/';</script>
+    {{ block.super }}
+{% endblock %}
+
+{% block userlinks %}
+    {% get_available_languages as langs %}
+    {% get_current_language as curr %}
+            {% for lang, val in langs %}
+                {% ifnotequal lang curr %}
+                    <a style="border-right: none; padding: 0; margin: 0; "
+                       href="{% url 'lang' lang %}">
+                        {{ lang }} /
+                    </a>
+                {% endifnotequal %}
+            {% endfor %}
+    {% if user.is_active and user.is_staff %}
+        {% url 'django-admindocs-docroot' as docsroot %}
+        {% if docsroot %}
+            <a href="{{ docsroot }}">{% trans 'Documentation' %}</a> /
+        {% endif %}
+    {% endif %}
+    {% if user.has_usable_password %}
+        <a href="{% url 'admin:password_change' %}">{% trans 'Change password' %}</a> /
+    {% endif %}
+    <a href="{% url 'admin:logout' %}">{% trans 'Log out' %}</a>
+{% endblock %}
+{% block content %}
+<form action="" method="POST" >
+    <p>{% trans 'Your email will be sent to following users:' %}</p>
+    <ul>{{ queryset|unordered_list }}</ul>
+    {% csrf_token %}
+    {{ form.media }}
+    {{ form.as_p}}
+    <input type="submit" name="cancel" value="cancel" formnovalidate>
+    <input type="submit" name="send" value="send">
+</form>
+{% endblock %}

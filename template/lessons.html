@@ -1,0 +1,18 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% trans 'lessons' %}</title>
+</head>
+<body>
+{% for lesson in lesson_list %}
+    <a href="{{ lesson.id }}">
+    {{ lesson.id }}
+    {{ lesson.name }}
+    </a><br>
+    <a href="{{ lesson.teacher.get_absolute_url }}"></a>
+{% endfor %}
+
+</body>
+</html>

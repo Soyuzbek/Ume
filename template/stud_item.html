@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ student.user.username }}</title>
+</head>
+<body>
+{{ student.user }}
+{{ student.user.username }}<br>
+lessons <br>
+{% for lesson in student.lessons.all %}
+    <a href="{{ lesson.get_absolute_url }}">{{ lesson.id }}
+    {{ lesson.name }}</a><br>
+{% endfor %}
+
+</body>
+</html>

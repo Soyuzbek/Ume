@@ -2,14 +2,14 @@
 # Copyright (C) 2019
 # This file is distributed under the same license as the UME package.
 # FIRST AUTHOR <soyuzbek196.kg@gmail.com>, 2019.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-25 14:40+0600\n"
-"PO-Revision-Date: 2019-05-25 14:25+0000\n"
+"POT-Creation-Date: 2019-05-26 16:29+0600\n"
+"PO-Revision-Date: 2019-05-26 16:32+0458\n"
 "Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -80,8 +80,8 @@ msgstr "Туура слаг (тамга, арип жана астсызык ка
 
 #: .\env\Lib\site-packages\django\core\validators.py:246
 msgid ""
-"Enter a valid 'slug' consisting of Unicode letters, numbers, underscores, or "
-"hyphens."
+"Enter a valid 'slug' consisting of Unicode letters, numbers, underscores, or"
+" hyphens."
 msgstr "Туура слаг (Йуникод тамгасын, арип, сызык жана астсызык камтыган) тер"
 
 #: .\env\Lib\site-packages\django\core\validators.py:255
@@ -129,7 +129,8 @@ msgid_plural ""
 msgstr[0] ""
 "Бул маани жок дегенде %(limit_value)d сандан турушу керек (азыркысы "
 "%(show_value)d)."
-msgstr[1] "Жок дегенде %(limit_value)d сан болуусу керек (азыр %(show_value)d)"
+msgstr[1] ""
+"Жок дегенде %(limit_value)d сан болуусу керек (азыр %(show_value)d)"
 
 #: .\env\Lib\site-packages\django\core\validators.py:376
 #, python-format
@@ -153,7 +154,7 @@ msgstr "Сан киргиз."
 #, python-format
 msgid "Ensure that there are no more than %(max)s digit in total."
 msgid_plural "Ensure that there are no more than %(max)s digits in total."
-msgstr[0] ""
+msgstr[0] "Жалпысынан %(max)s орундуу сан болуусун текшериңиз."
 msgstr[1] "Жалпысынан %(max)s орундуу сандар болуусун текшериңиз."
 
 #: .\env\Lib\site-packages\django\core\validators.py:402
@@ -193,12 +194,12 @@ msgstr "жана"
 #: .\env\Lib\site-packages\django\db\models\base.py:1164
 #, python-format
 msgid "%(model_name)s with this %(field_labels)s already exists."
-msgstr ""
+msgstr "%(model_name)s бул %(field_labels)s менен мурдатан эле бар"
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:104
 #, python-format
 msgid "Value %(value)r is not a valid choice."
-msgstr ""
+msgstr "%(value)r мааниси туура эмес тандоо."
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:105
 msgid "This field cannot be null."
@@ -211,7 +212,7 @@ msgstr "Бул аймак бош калбашы керек"
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:107
 #, python-format
 msgid "%(model_name)s with this %(field_label)s already exists."
-msgstr ""
+msgstr "%(model_name)s бул %(field_label)s менен мурдатан эле бар"
 
 #. Translators: The 'lookup_type' is one of 'date', 'year' or 'month'.
 #. Eg: "Title must be unique for pub_date year"
@@ -220,6 +221,8 @@ msgstr ""
 msgid ""
 "%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
 msgstr ""
+"%(field_label)s %(date_field_label)s %(lookup_type)s үчүн уникал болуусу "
+"керек."
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:128
 #, python-format
@@ -235,7 +238,7 @@ msgstr "Натурал сан"
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1764
 #, python-format
 msgid "'%(value)s' value must be an integer."
-msgstr ""
+msgstr "'%(value)s' мааниси натурсан болуусу керек."
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:978
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1844
@@ -245,12 +248,12 @@ msgstr "Чоң ( 8 байт) натурал сан"
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:990
 #, python-format
 msgid "'%(value)s' value must be either True or False."
-msgstr ""
+msgstr "'%(value)s' мааниси Туура же Жалган болуусу керек."
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:991
 #, python-format
 msgid "'%(value)s' value must be either True, False, or None."
-msgstr ""
+msgstr "'%(value)s' мааниси Туура же Жалган же бош болуусу керек."
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:993
 msgid "Boolean (Either True or False)"
@@ -271,6 +274,8 @@ msgid ""
 "'%(value)s' value has an invalid date format. It must be in YYYY-MM-DD "
 "format."
 msgstr ""
+"'%(value)s' мааниси туура калыпта эмес. Ал ЖЖЖЖ-АА-КК калыбында болуусу "
+"керек."
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1149
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1292
@@ -279,6 +284,8 @@ msgid ""
 "'%(value)s' value has the correct format (YYYY-MM-DD) but it is an invalid "
 "date."
 msgstr ""
+"'%(value)s' мааниси туура калыпта (ЖЖЖЖ-АА-КК), бирок туура эмес күндү "
+"көрсөтүп турат."
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1152
 msgid "Date (without time)"
@@ -287,16 +294,19 @@ msgstr "Күн (убакытсыз)"
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1290
 #, python-format
 msgid ""
-"'%(value)s' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
-"uuuuuu]][TZ] format."
+"'%(value)s' value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
 msgstr ""
+"'%(value)s' мааниси туура эмес калыпта берилди.  калыбында болуусу керек."
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1294
 #, python-format
 msgid ""
-"'%(value)s' value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
-"[TZ]) but it is an invalid date/time."
+"'%(value)s' value has the correct format (YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
 msgstr ""
+"'%(value)s' мааниси туура калыпта ЖЖЖЖ-АА-КК СС:MM[:сс[.uuuuuu]][УЗ] . Бирок"
+" ката күн\\саат берилген."
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1298
 msgid "Date (with time)"
@@ -305,7 +315,7 @@ msgstr "Күн(убакыттуу)"
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1446
 #, python-format
 msgid "'%(value)s' value must be a decimal number."
-msgstr ""
+msgstr "'%(value)s' мааниси ондук бөлчөк болуусу керек."
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1448
 msgid "Decimal number"
@@ -314,9 +324,11 @@ msgstr "ондук сан"
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1587
 #, python-format
 msgid ""
-"'%(value)s' value has an invalid format. It must be in [DD] [HH:[MM:]]ss[."
-"uuuuuu] format."
+"'%(value)s' value has an invalid format. It must be in [DD] "
+"[HH:[MM:]]ss[.uuuuuu] format."
 msgstr ""
+"'%(value)s' туура эмес калыпта. Ал  [КК] [СС:[ММ:]]сс[.uuuuuu] калыпта "
+"болуусу керек."
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1590
 msgid "Duration"
@@ -333,7 +345,7 @@ msgstr "файл жайгашуусу"
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1729
 #, python-format
 msgid "'%(value)s' value must be a float."
-msgstr ""
+msgstr "'%(value)s' мааниси калкыган чекиттүү болуусу керек."
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1731
 msgid "Floating point number"
@@ -351,11 +363,11 @@ msgstr "IP дареги"
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1972
 #, python-format
 msgid "'%(value)s' value must be either None, True or False."
-msgstr ""
+msgstr "'%(value)s' мааниси же бош же Туура же Жалган болуу керек."
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1974
 msgid "Boolean (Either True, False or None)"
-msgstr ""
+msgstr "Булен(Туура же Жалган же Жок)"
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2009
 msgid "Positive integer"
@@ -384,6 +396,8 @@ msgid ""
 "'%(value)s' value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
 "format."
 msgstr ""
+"'%(value)s' туура эмес калыпта. Ал СС:ММ:[сс[.uuuuuu]] калыпта болуусу "
+"керек."
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2105
 #, python-format
@@ -391,6 +405,8 @@ msgid ""
 "'%(value)s' value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
 "invalid time."
 msgstr ""
+"'%(value)s' туура СС:ММ:[сс[.uuuuuu]] калыпта. Бирок туура эмес убакые "
+"берилди."
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2108
 msgid "Time"
@@ -407,7 +423,7 @@ msgstr "жалаң экилик берилиш"
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2306
 #, python-format
 msgid "'%(value)s' is not a valid UUID."
-msgstr ""
+msgstr "'%(value)s мааниси туура эмес UUID камтыйт."
 
 #: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2308
 msgid "Universally unique identifier"
@@ -415,24 +431,24 @@ msgstr "универсал уникал көрсөтүүчү"
 
 #: .\env\Lib\site-packages\django\db\models\fields\files.py:221
 msgid "File"
-msgstr ""
+msgstr "Файл"
 
 #: .\env\Lib\site-packages\django\db\models\fields\files.py:360
 msgid "Image"
-msgstr ""
+msgstr "Сүрөт"
 
 #: .\env\Lib\site-packages\django\db\models\fields\related.py:778
 #, python-format
 msgid "%(model)s instance with %(field)s %(value)r does not exist."
-msgstr ""
+msgstr "%(model)s нерсеси %(field)s аймагы %(value)r маани менен табылбады."
 
 #: .\env\Lib\site-packages\django\db\models\fields\related.py:780
 msgid "Foreign Key (type determined by related field)"
-msgstr ""
+msgstr "Четки Ачкыч (байланышкан аймак менен аныкталат)"
 
 #: .\env\Lib\site-packages\django\db\models\fields\related.py:1007
 msgid "One-to-one relationship"
-msgstr ""
+msgstr "Бирги-бир байланышы"
 
 #: .\env\Lib\site-packages\django\db\models\fields\related.py:1057
 #, python-format
@@ -449,7 +465,8 @@ msgid "Many-to-many relationship"
 msgstr "көпкө-көп байланышы"
 
 #. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the label
+#. characters will prevent the default label_suffix to be appended to the
+#. label
 #: .\env\Lib\site-packages\django\forms\boundfield.py:146
 msgid ":?.!"
 msgstr ":?.!"
@@ -483,37 +500,38 @@ msgstr "Туура мөөнөт киргиз."
 #: .\env\Lib\site-packages\django\forms\fields.py:472
 #, python-brace-format
 msgid "The number of days must be between {min_days} and {max_days}."
-msgstr ""
+msgstr "Күндөрдүн саны {min_days} жана {max_days} арасында болуусу керек."
 
 #: .\env\Lib\site-packages\django\forms\fields.py:532
 msgid "No file was submitted. Check the encoding type on the form."
-msgstr ""
+msgstr "Файл жиберилген жок. Формдун бекитүү түрүн текшер."
 
 #: .\env\Lib\site-packages\django\forms\fields.py:533
 msgid "No file was submitted."
-msgstr ""
+msgstr "Файл жиберилген жок."
 
 #: .\env\Lib\site-packages\django\forms\fields.py:534
 msgid "The submitted file is empty."
-msgstr ""
+msgstr "Жиберилген файл бош."
 
 #: .\env\Lib\site-packages\django\forms\fields.py:536
 #, python-format
-msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid ""
+"Ensure this filename has at most %(max)d character (it has %(length)d)."
 msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Файлдын аты жок дегенде %(max)d болуусу керек (азыр %(length)d)."
+msgstr[1] "Файлдын аты %(max)d ашпоосу керек (азыр %(length)d)."
 
 #: .\env\Lib\site-packages\django\forms\fields.py:539
 msgid "Please either submit a file or check the clear checkbox, not both."
-msgstr ""
+msgstr "Сураныч же файл жибериңиз же тандоону бош калтырыңыз. Экөөн тең эмес."
 
 #: .\env\Lib\site-packages\django\forms\fields.py:600
 msgid ""
 "Upload a valid image. The file you uploaded was either not an image or a "
 "corrupted image."
-msgstr ""
+msgstr "Туура сүрөт жөнөтүңүз. Сиз жүктөгөн же сүрөт эмес же бузулган сүрөт."
 
 #: .\env\Lib\site-packages\django\forms\fields.py:762
 #: .\env\Lib\site-packages\django\forms\fields.py:852
@@ -544,25 +562,25 @@ msgstr ":"
 #: .\env\Lib\site-packages\django\forms\forms.py:212
 #, python-format
 msgid "(Hidden field %(name)s) %(error)s"
-msgstr ""
+msgstr "(жашырылган аймак %(name)s)  %(error)s"
 
 #: .\env\Lib\site-packages\django\forms\formsets.py:91
 msgid "ManagementForm data is missing or has been tampered with"
-msgstr ""
+msgstr "ФорБашкаруу берилиши унутулган же бурмаланган"
 
 #: .\env\Lib\site-packages\django\forms\formsets.py:338
 #, python-format
 msgid "Please submit %d or fewer forms."
 msgid_plural "Please submit %d or fewer forms."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Сураныч %d же азыраак жөнөтүңүз."
+msgstr[1] "Сураныч %d же азыраак жөнөтүңүз."
 
 #: .\env\Lib\site-packages\django\forms\formsets.py:345
 #, python-format
 msgid "Please submit %d or more forms."
 msgid_plural "Please submit %d or more forms."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Сураныч %d же көбүрөөк жөнөтүңүз."
+msgstr[1] "Сураныч %d же көбүрөөк жөнөтүңүз."
 
 #: .\env\Lib\site-packages\django\forms\formsets.py:371
 #: .\env\Lib\site-packages\django\forms\formsets.py:373
@@ -577,12 +595,13 @@ msgstr "Алып сал"
 #: .\env\Lib\site-packages\django\forms\models.py:751
 #, python-format
 msgid "Please correct the duplicate data for %(field)s."
-msgstr ""
+msgstr "%(field)s үчүн кайталанган маанилерди оңдоңуз."
 
 #: .\env\Lib\site-packages\django\forms\models.py:755
 #, python-format
 msgid "Please correct the duplicate data for %(field)s, which must be unique."
 msgstr ""
+"%(field)s үчүн кайталанган маанилерди оңдоңуз алар уникал болуусу керек."
 
 #: .\env\Lib\site-packages\django\forms\models.py:761
 #, python-format
@@ -590,23 +609,26 @@ msgid ""
 "Please correct the duplicate data for %(field_name)s which must be unique "
 "for the %(lookup)s in %(date_field)s."
 msgstr ""
+"%(field_name)s %(date_field)s да %(lookup)s үчүн уникал болусу керек. "
+"Берилиштерди оңдоңуз."
 
 #: .\env\Lib\site-packages\django\forms\models.py:770
 msgid "Please correct the duplicate values below."
-msgstr ""
+msgstr "Төмөндө кайталаган маанилерди оңдоңуз."
 
 #: .\env\Lib\site-packages\django\forms\models.py:1091
 msgid "The inline value did not match the parent instance."
-msgstr ""
+msgstr "Катардагы маани энелик нерсеге туура келбей жатат."
 
 #: .\env\Lib\site-packages\django\forms\models.py:1158
-msgid "Select a valid choice. That choice is not one of the available choices."
+msgid ""
+"Select a valid choice. That choice is not one of the available choices."
 msgstr "Туура тандоо кылыңыз. Ал тандоо мүмкүнчүлүктөн сырткары."
 
 #: .\env\Lib\site-packages\django\forms\models.py:1272
 #, python-format
 msgid "\"%(pk)s\" is not a valid value."
-msgstr ""
+msgstr "\"%(pk)s\" туура эмес маани."
 
 #: .\env\Lib\site-packages\django\forms\utils.py:162
 #, python-format
@@ -614,6 +636,8 @@ msgid ""
 "%(datetime)s couldn't be interpreted in time zone %(current_timezone)s; it "
 "may be ambiguous or it may not exist."
 msgstr ""
+"%(datetime)s күнү %(current_timezone)s зонасына которулбай жатат. Бул көп "
+"маанилүү же бош болуусу мүмкүн."
 
 #: .\env\Lib\site-packages\django\forms\widgets.py:395
 msgid "Clear"
@@ -650,13 +674,13 @@ msgstr "ооба, жок, балким"
 #, python-format
 msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(size)d байт"
+msgstr[1] "%(size)d байттар"
 
 #: .\env\Lib\site-packages\django\template\defaultfilters.py:836
 #, python-format
 msgid "%s KB"
-msgstr ""
+msgstr "%s КБ"
 
 #: .\env\Lib\site-packages\django\template\defaultfilters.py:838
 #, python-format
@@ -1065,15 +1089,23 @@ msgid ""
 "enable them, at least for this site, or for HTTPS connections, or for 'same-"
 "origin' requests."
 msgstr ""
+"Сиз браузериңизди 'Referer' баштыктарын өчүрүп койсоңуз жок дегенде бул сайт"
+" үчүн же HTTPS байланыштары үчүн же биртектүү сурамдар үчүн кайра "
+"жандырыңыз."
 
 #: .\env\Lib\site-packages\django\views\csrf.py:124
 msgid ""
-"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
-"including the 'Referrer-Policy: no-referrer' header, please remove them. The "
-"CSRF protection requires the 'Referer' header to do strict referer checking. "
-"If you're concerned about privacy, use alternatives like <a rel=\"noreferrer"
-"\" ...> for links to third-party sites."
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or"
+" including the 'Referrer-Policy: no-referrer' header, please remove them. "
+"The CSRF protection requires the 'Referer' header to do strict referer "
+"checking. If you're concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" ...> for links to third-party sites."
 msgstr ""
+" Эгер сиз <meta name=\"referrer\" content=\"no-referrer\"> тегин же "
+"'Referrer-Policy: no-referrer' баштыктарын колдонуп жатсаңыз аларды өчүрүп "
+"салыңыз. CSRF коргоосу 'Referer' баштыгы чектелген маалымат текшерүүсүн "
+"талап кылат. Эгер сиз кооптонуп жатсаңыз, үчүнчү жак сайттар үчүн <a "
+"rel=\"noreferrer\" ...> сыяктуу орунбасарларды колдонуңуз"
 
 #: .\env\Lib\site-packages\django\views\csrf.py:132
 msgid ""
@@ -1081,12 +1113,17 @@ msgid ""
 "submitting forms. This cookie is required for security reasons, to ensure "
 "that your browser is not being hijacked by third parties."
 msgstr ""
+"Сиз бул билдирүүнү бул сайт форм жиберүүдө CSRF кукини талап кылгандыгы үчүн"
+" көрүп жатасыз.  Бул куки коопсуздуктан улам сиздин сайтыңыз үчүнчү жактан "
+"чабуулга кабылбаганын текшерүү үчүн талап кылынат. "
 
 #: .\env\Lib\site-packages\django\views\csrf.py:137
 msgid ""
 "If you have configured your browser to disable cookies, please re-enable "
 "them, at least for this site, or for 'same-origin' requests."
 msgstr ""
+"Эгер сиз бразерди куки колдонуусун өчүрүп койсоңуз жок дегенде бул сайтка же"
+" биртектүү сурамдар үчүн жангызыңыз."
 
 #: .\env\Lib\site-packages\django\views\csrf.py:142
 msgid "More information is available with DEBUG=True."
@@ -1123,33 +1160,35 @@ msgstr "%(verbose_name_plural)s жок"
 #: .\env\Lib\site-packages\django\views\generic\dates.py:589
 #, python-format
 msgid ""
-"Future %(verbose_name_plural)s not available because %(class_name)s."
-"allow_future is False."
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
 msgstr ""
+"%(verbose_name_plural)s future си тейленбейт. Себеби "
+"%(class_name)s.allow_future си  False маани алган."
 
 #: .\env\Lib\site-packages\django\views\generic\dates.py:623
 #, python-format
 msgid "Invalid date string '%(datestr)s' given format '%(format)s'"
-msgstr ""
+msgstr " '%(datestr)s' күн сабы туура эмес '%(format)s' калыпта берилди."
 
 #: .\env\Lib\site-packages\django\views\generic\detail.py:54
 #, python-format
 msgid "No %(verbose_name)s found matching the query"
-msgstr ""
+msgstr "суроого %(verbose_name)s эч нерсе табылбады"
 
 #: .\env\Lib\site-packages\django\views\generic\list.py:67
 msgid "Page is not 'last', nor can it be converted to an int."
-msgstr ""
+msgstr "Барак акыркы эмес же int которулбай жатат."
 
 #: .\env\Lib\site-packages\django\views\generic\list.py:72
 #, python-format
 msgid "Invalid page (%(page_number)s): %(message)s"
-msgstr ""
+msgstr "Туура эмес (%(page_number)s) барак: %(message)s"
 
 #: .\env\Lib\site-packages\django\views\generic\list.py:154
 #, python-format
 msgid "Empty list and '%(class_name)s.allow_empty' is False."
-msgstr ""
+msgstr "Ката тизмек жана '%(class_name)s.allow_empty' False орнотулган."
 
 #: .\env\Lib\site-packages\django\views\static.py:40
 msgid "Directory indexes are not allowed here."
@@ -1167,7 +1206,7 @@ msgstr "%(directory)s индекстери"
 
 #: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:6
 msgid "Django: the Web framework for perfectionists with deadlines."
-msgstr ""
+msgstr "Жанго: убакыт боюнча кынтыксыздар үчүн фреймворк."
 
 #: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:345
 #, python-format
@@ -1175,6 +1214,9 @@ msgid ""
 "View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
 "target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
 msgstr ""
+"Жанго %(version)s үчүн <a "
+"href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> кара."
 
 #: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:367
 msgid "The install worked successfully! Congratulations!"
@@ -1183,11 +1225,15 @@ msgstr "Орнотуу ийгиликтүү аяктады! Куттуу бол�
 #: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:368
 #, python-format
 msgid ""
-"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
-"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
-"\">DEBUG=True</a> is in your settings file and you have not configured any "
-"URLs."
+"You are seeing this page because <a "
+"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
+"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file "
+"and you have not configured any URLs."
 msgstr ""
+"Сиз бул бетти сиздин тууралоо файлыңызда <a "
+"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
+"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> жана эчбир урл "
+"тууралабагандыгыңыз үчүн көрүп жататсыз."
 
 #: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:383
 msgid "Django Documentation"
@@ -1307,6 +1353,14 @@ msgstr "ысым"
 #: .\main\models.py:9
 msgid "annotation"
 msgstr "киришүү"
+
+#: .\main\models.py:10 .\main\models.py:24
+msgid "content"
+msgstr "мазмун"
+
+#: .\main\models.py:11
+msgid "author"
+msgstr "автор"
 
 #: .\main\models.py:12 .\main\models.py:25
 msgid "date"
@@ -1457,9 +1511,18 @@ msgstr "мугалим"
 msgid "is student"
 msgstr "студент"
 
-#: .\users\models.py:18 .\users\models.py:19
+#: .\users\models.py:17 .\users\models.py:48
+#| msgid "users"
+msgid "user"
+msgstr "колдонуучу"
+
+#: .\users\models.py:18
 msgid "degree"
 msgstr "даражасы"
+
+#: .\users\models.py:19
+msgid "rank"
+msgstr "даража"
 
 #: .\users\models.py:21 .\users\models.py:50
 msgid "First course"
@@ -1481,9 +1544,7 @@ msgstr "төртүнчү курс"
 msgid "own group"
 msgstr "өз  тайпасы"
 
-#: .\users\models.py:27
-#, fuzzy
-#| msgid "Lessons"
+#: .\users\models.py:27 .\users\models.py:57
 msgid "lessons"
 msgstr "Сабактар"
 
@@ -1516,7 +1577,7 @@ msgstr "дарек"
 
 #: .\users\models.py:37 .\users\models.py:67
 msgid "home address"
-msgstr "дареги"
+msgstr "үй дареги"
 
 #: .\users\models.py:40
 msgid "Teacher"

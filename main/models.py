@@ -1,14 +1,15 @@
 from ckeditor.fields import RichTextField
 from django.contrib.auth.models import AbstractUser
 from django.db import models
+from django.urls import reverse
 from django.utils.translation import ugettext_lazy as _
 
 
 class Post(models.Model):
     name = models.CharField(_('name'), max_length=255)
     annotation = models.TextField(_('annotation'))
-    content = RichTextField()
-    author = models.ForeignKey('users.User', on_delete=models.DO_NOTHING)
+    content = RichTextField(verbose_name=_('content'))
+    author = models.ForeignKey('users.User', on_delete=models.DO_NOTHING, verbose_name=_('author'))
     date = models.DateTimeField(_('date'), auto_now=True)
 
     class Meta:
@@ -21,7 +22,7 @@ class Post(models.Model):
 
 class Notification(models.Model):
     name = models.TextField(_('name'))
-    content = RichTextField()
+    content = RichTextField(verbose_name=_('content'))
     date = models.DateTimeField(_('date'), auto_now=True)
     expire = models.DateTimeField(_('date of expire'))
 
@@ -36,19 +37,24 @@ class Notification(models.Model):
 class Lesson(models.Model):
     id = models.CharField('ID', max_length=7, primary_key=True)
     name = models.CharField(_('name'), max_length=255)
+    teacher = models.ForeignKey('users.Teacher', on_delete=models.DO_NOTHING, verbose_name=_('teacher'), null=True,
+                                related_name='lessons')
     STATE_CHOICES = (
         ('ZD', _('Necessary')),
         ('SD', _('Optional'))
     )
-    state = models.CharField(verbose_name=_('type'), max_length=5, choices=STATE_CHOICES)
-    term = models.PositiveSmallIntegerField(verbose_name=_('term'), default=1)
+    state = models.CharField(_('type'), max_length=5, choices=STATE_CHOICES)
+    term = models.PositiveSmallIntegerField(_('term'), default=1)
 
     class Meta:
         verbose_name = _('Lesson')
         verbose_name_plural = _('Lessons')
 
     def __str__(self):
-        return self.name
+        return f'{self.id} - {self.name}'
+
+    def get_absolute_url(self):
+        return reverse('lesson', args=[str(self.id)])
 
 
 class Wallpaper(models.Model):

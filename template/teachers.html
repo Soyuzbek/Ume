@@ -1,0 +1,17 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% trans 'teachers' %}</title>
+</head>
+<body>
+{% for teacher in teachers %}
+    <a href="{{ teacher.get_absolute_url }}">
+        {{ teacher.user.id }}
+        {{ teacher.user.username }}
+    </a>
+{% endfor %}
+
+</body>
+</html>

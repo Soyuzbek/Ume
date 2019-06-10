@@ -1,11 +1,8 @@
-from django.contrib.auth import login
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import View
-from django.views.generic import TemplateView, CreateView
+from django.views.generic import ListView, DetailView
 
-from main.forms import StudentSignUpForm
-from main.models import Wallpaper, Post
-from users.models import User
+from main.models import Wallpaper, Post, Lesson
 
 
 class LanguageView(View):
@@ -19,32 +16,18 @@ class LanguageView(View):
 class IndexView(View):
     template_name = 'index.html'
 
-    def get(self, request, *args, **kwargs):
+    def get(self, request):
         wallpaper_list = Wallpaper.objects.all()
         advantage_list = Post.objects.filter(name='advantage').first()
-        return render(request, 'index.html', locals())
+        return render(request, self.template_name, locals())
 
 
-class SignUpView(View):
-    template_name = 'registration/signup.html'
-
-    def get(self, request, *args, **kwargs):
-        return render(request, self.template_name)
-
-class StudentSignUpView(CreateView):
-    model = User
-    form_class = StudentSignUpForm
-    template_name = 'registration/signup_form.html'
-
-    def get_context_data(self, **kwargs):
-        kwargs['user_type'] = 'student'
-        return super().get_context_data(**kwargs)
-
-    def form_valid(self, form):
-        user = form.save()
-        login(self.request, user)
-        return redirect('')
+class LessonsView(ListView):
+    model = Lesson
+    template_name = 'lessons.html'
 
 
-class TeacherSignUpView(CreateView):
-    pass
+class LessonItemView(DetailView):
+    model = Lesson
+    template_name = 'les_item.html'
+

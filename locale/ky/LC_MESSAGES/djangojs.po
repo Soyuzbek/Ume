@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-26 15:39+0600\n"
+"PO-Revision-Date: 2019-05-26 16:15+0458\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Translated-Using: django-rosetta 0.9.2\n"
+
+#: .\env\Lib\site-packages\flat\static\admin\js\SelectFilter2.js:45
+#, javascript-format
+msgid "Available %s"
+msgstr "Жеткиликтүү %s"
+
+#: .\env\Lib\site-packages\flat\static\admin\js\SelectFilter2.js:46
+#, javascript-format
+msgid ""
+"This is the list of available %s. You may choose some by selecting them in "
+"the box below and then clicking the \"Choose\" arrow between the two boxes."
+msgstr ""
+"Бул жеткиликтүү %s. Сиз каалагандарын төмөндө кутудан \"Тандоо\" ну басып "
+"тандай аласыз."
+
+#: .\env\Lib\site-packages\flat\static\admin\js\SelectFilter2.js:53
+#, javascript-format
+msgid "Type into this box to filter down the list of available %s."
+msgstr "Жеткиликтүү %s чыпкалоо үчүн төмөндө кутуга жазыңыз"
+
+#: .\env\Lib\site-packages\flat\static\admin\js\SelectFilter2.js:57
+msgid "Filter"
+msgstr "Чыпкалоо"
+
+#: .\env\Lib\site-packages\flat\static\admin\js\SelectFilter2.js:61
+msgid "Choose all"
+msgstr "Баарын тандоо"
+
+#: .\env\Lib\site-packages\flat\static\admin\js\SelectFilter2.js:61
+#, javascript-format
+msgid "Click to choose all %s at once."
+msgstr "Бүт %s заматта тандоо үчүн чыкылдатыңыз."
+
+#: .\env\Lib\site-packages\flat\static\admin\js\SelectFilter2.js:67
+msgid "Choose"
+msgstr "Тандоо"
+
+#: .\env\Lib\site-packages\flat\static\admin\js\SelectFilter2.js:69
+msgid "Remove"
+msgstr "Өчүр"
+
+#: .\env\Lib\site-packages\flat\static\admin\js\SelectFilter2.js:75
+#, javascript-format
+msgid "Chosen %s"
+msgstr "%s тандалды"
+
+#: .\env\Lib\site-packages\flat\static\admin\js\SelectFilter2.js:76
+#, javascript-format
+msgid ""
+"This is the list of chosen %s. You may remove some by selecting them in the "
+"box below and then clicking the \"Remove\" arrow between the two boxes."
+msgstr ""
+"Бул жеткиликтүү %s. Сиз каалагандарын төмөндө кутудан \"Өчүр\" басып өчүрө "
+"аласыз."
+
+#: .\env\Lib\site-packages\flat\static\admin\js\SelectFilter2.js:80
+msgid "Remove all"
+msgstr "Баарын өчүрүү"
+
+#: .\env\Lib\site-packages\flat\static\admin\js\SelectFilter2.js:80
+#, javascript-format
+msgid "Click to remove all chosen %s at once."
+msgstr "Бүт %s өчүрүү үчүн чыкылдат."
+
+#: .\env\Lib\site-packages\flat\static\admin\js\admin\DateTimeShortcuts.js:79
+#, javascript-format
+msgid "Note: You are %s hour ahead of server time."
+msgid_plural "Note: You are %s hours ahead of server time."
+msgstr[0] "Эскертүү: Сиз серверден %s саат алдыдасыз."
+msgstr[1] "Эскертүү: Сиз серверден %s саат алдыдасыз."
+
+#: .\env\Lib\site-packages\flat\static\admin\js\admin\DateTimeShortcuts.js:87
+#, javascript-format
+msgid "Note: You are %s hour behind server time."
+msgid_plural "Note: You are %s hours behind server time."
+msgstr[0] "Эскертүү: Сиз серверден %s саат аркадасыз."
+msgstr[1] "Эскертүү: Сиз серверден %s саат аркадасыз."
+
+#: .\env\Lib\site-packages\flat\static\admin\js\admin\DateTimeShortcuts.js:114
+#: .\env\Lib\site-packages\flat\static\admin\js\admin\DateTimeShortcuts.js:149
+msgid "Now"
+msgstr "Азыр"
+
+#: .\env\Lib\site-packages\flat\static\admin\js\admin\DateTimeShortcuts.js:118
+msgid "Clock"
+msgstr "Саат."
+
+#: .\env\Lib\site-packages\flat\static\admin\js\admin\DateTimeShortcuts.js:146
+msgid "Choose a time"
+msgstr "Убак танда"
+
+#: .\env\Lib\site-packages\flat\static\admin\js\admin\DateTimeShortcuts.js:150
+msgid "Midnight"
+msgstr "Түнүчү"
+
+#: .\env\Lib\site-packages\flat\static\admin\js\admin\DateTimeShortcuts.js:151
+msgid "6 a.m."
+msgstr "Саарлап"
+
+#: .\env\Lib\site-packages\flat\static\admin\js\admin\DateTimeShortcuts.js:152
+msgid "Noon"
+msgstr "Түш"
+
+#: .\env\Lib\site-packages\flat\static\admin\js\admin\DateTimeShortcuts.js:156
+#: .\env\Lib\site-packages\flat\static\admin\js\admin\DateTimeShortcuts.js:276
+msgid "Cancel"
+msgstr "Жокко чыгар"
+
+#: .\env\Lib\site-packages\flat\static\admin\js\admin\DateTimeShortcuts.js:216
+#: .\env\Lib\site-packages\flat\static\admin\js\admin\DateTimeShortcuts.js:269
+msgid "Today"
+msgstr "Бүгүн"
+
+#: .\env\Lib\site-packages\flat\static\admin\js\admin\DateTimeShortcuts.js:220
+msgid "Choose a Date"
+msgstr "Күн Танда"
+
+#: .\env\Lib\site-packages\flat\static\admin\js\admin\DateTimeShortcuts.js:267
+msgid "Yesterday"
+msgstr "Кечээ"
+
+#: .\env\Lib\site-packages\flat\static\admin\js\admin\DateTimeShortcuts.js:271
+msgid "Tomorrow"
+msgstr "Эртең"
