@@ -79,8 +79,3 @@ class Student(models.Model):
 
     def get_absolute_url(self):
         return reverse('stud_item', args=[str(self.user.id)])
-
-#
-# class StudentLesson(models.Model):
-#     student = models.ForeignKey('Student', models.CASCADE)
-#     lesson = models.ForeignKey('main.Lesson', models.CASCADE)
