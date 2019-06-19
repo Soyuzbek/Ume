@@ -1,14 +1,9 @@
 from django.contrib import admin
-from django.contrib.auth.admin import UserAdmin
 from modeltranslation.admin import TabbedTranslationAdmin
 
 from main.models import Post, Notification, Lesson, Wallpaper
-# from users.models import Student, StudentLesson
 
 
-#
-# class StudentAdmin(admin.StackedInline):
-#     model = Student
 from users.models import Student
 
 
