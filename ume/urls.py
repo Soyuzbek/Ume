@@ -3,7 +3,8 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
-from main.views import LanguageView, IndexView, LessonsView, LessonItemView
+from main.views import LanguageView, IndexView, LessonsView, LessonItemView, TimetableView, RoomTable, SelfTable, \
+    TeacherTable
 from users.views import SignUpView, StudentSignUpView, TeacherSignUpView, LogoutView, LoginView, StudentsView, \
     StudentItemView, TeachersView, TeacherItemView
 
@@ -25,6 +26,11 @@ urlpatterns = [
     path('lessons/<str:pk>', LessonItemView.as_view(), name='lesson'),
     path('teachers/', TeachersView.as_view(), name='teachers'),
     path('teachers/<str:pk>/', TeacherItemView.as_view(), name='teach_item'),
+    path('timetable/', TimetableView.as_view(), name='timetable'),
+    path('timetable/room/<str:room>/', RoomTable.as_view(), name='room'),
+    path('timetable/self/', SelfTable.as_view(), name='self_table'),
+    path('timetable/teacher/<str:id>/', TeacherTable.as_view(), name='teacher_table'),
+
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

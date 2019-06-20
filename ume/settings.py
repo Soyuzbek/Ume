@@ -240,3 +240,4 @@ CONFIG_DEFAULTS = {
     'SQL_WARNING_THRESHOLD': 100,   # milliseconds
 }
 INTERNAL_IPS = '127.0.0.1'
+

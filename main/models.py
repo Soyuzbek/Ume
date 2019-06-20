@@ -67,3 +67,45 @@ class Wallpaper(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Assign(models.Model):
+    DAY_CHOICE = (
+        ('Monday', _('Monday')),
+        ('Tuesday', _('Tuesday')),
+        ('Wednesday', _('Wednesday')),
+        ('Thursday', _('Thursday')),
+        ('Friday', _('Friday')),
+    )
+    TIME_SLOTS = (
+        ('8:00 - 8:45', '8:00 - 8:45'),
+        ('8:55 - 9:40',  '8:55 - 9:40'),
+        ('9:50 - 10:35', '9:50 - 10:35'),
+        ('10:45 - 11:30', '10:45 - 11:30'),
+        ('11:40 - 12:25', '11:40 - 12:25'),
+        ('12:35 - 13:20', '12:35 - 13:20'),
+        ('13:30 - 14:15', '13:30 - 14:15'),
+        ('14:25 - 15:10', '14:25 - 15:10'),
+        ('15:20 - 16:05', '15:20 - 16:05'),
+        ('16:15 - 17:00', '16:15 - 17:00'),
+        ('17:10 - 17:55', '17:10 - 17:55')
+    )
+    ROOM_CHOICES = (
+        ('101', '101'),
+        ('102', '102'),
+        ('103', '103'),
+        ('104', '104'),
+        ('105', '105'),
+        ('106', '106'),
+        ('107', '107'),
+        ('118', '118'),
+        ('119', '119')
+    )
+    lesson = models.ForeignKey(Lesson, models.DO_NOTHING, related_name='assign_set', verbose_name=_('lesson'))
+    room = models.CharField(_('room'), max_length=10, choices=ROOM_CHOICES)
+    day = models.CharField(_('day'), max_length=15, choices=DAY_CHOICE)
+    time_slots = models.CharField(_('time slot'), max_length=13, choices=TIME_SLOTS, default=TIME_SLOTS[0])
+
+    class Meta:
+        verbose_name = _('Assign')
+        verbose_name_plural = _('Assigns')

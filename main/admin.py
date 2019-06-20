@@ -1,8 +1,7 @@
 from django.contrib import admin
 from modeltranslation.admin import TabbedTranslationAdmin
 
-from main.models import Post, Notification, Lesson, Wallpaper
-
+from main.models import Post, Notification, Lesson, Wallpaper, Assign
 
 from users.models import Student
 
@@ -31,3 +30,9 @@ class LessonAdmin(TabbedTranslationAdmin):
 @admin.register(Wallpaper)
 class WallAdmin(admin.ModelAdmin):
     pass
+
+
+@admin.register(Assign)
+class AssignAdmin(admin.ModelAdmin):
+    list_display = ('id', 'lesson', 'room', 'day', 'time_slots')
+    list_editable = ('lesson', 'room', 'day', 'time_slots')

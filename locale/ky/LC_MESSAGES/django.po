@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-26 16:29+0600\n"
-"PO-Revision-Date: 2019-05-26 16:32+0458\n"
+"POT-Creation-Date: 2019-06-20 19:19+0600\n"
+"PO-Revision-Date: 2019-06-20 19:22+0458\n"
 "Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -726,23 +726,23 @@ msgstr "Түнүчү"
 msgid "noon"
 msgstr "ай"
 
-#: .\env\Lib\site-packages\django\utils\dates.py:6
+#: .\env\Lib\site-packages\django\utils\dates.py:6 .\main\models.py:74
 msgid "Monday"
 msgstr "Дүйшөмбү"
 
-#: .\env\Lib\site-packages\django\utils\dates.py:6
+#: .\env\Lib\site-packages\django\utils\dates.py:6 .\main\models.py:75
 msgid "Tuesday"
 msgstr "Шейшемби"
 
-#: .\env\Lib\site-packages\django\utils\dates.py:6
+#: .\env\Lib\site-packages\django\utils\dates.py:6 .\main\models.py:76
 msgid "Wednesday"
 msgstr "Шаршемби"
 
-#: .\env\Lib\site-packages\django\utils\dates.py:6
+#: .\env\Lib\site-packages\django\utils\dates.py:6 .\main\models.py:77
 msgid "Thursday"
 msgstr "Бейшемби"
 
-#: .\env\Lib\site-packages\django\utils\dates.py:6
+#: .\env\Lib\site-packages\django\utils\dates.py:6 .\main\models.py:78
 msgid "Friday"
 msgstr "Жума"
 
@@ -1345,94 +1345,127 @@ msgstr "Бош"
 msgid "main"
 msgstr "Башкы"
 
-#: .\main\models.py:8 .\main\models.py:23 .\main\models.py:38
-#: .\main\models.py:55
+#: .\main\models.py:9 .\main\models.py:24 .\main\models.py:39
+#: .\main\models.py:61
 msgid "name"
 msgstr "ысым"
 
-#: .\main\models.py:9
+#: .\main\models.py:10
 msgid "annotation"
 msgstr "киришүү"
 
-#: .\main\models.py:10 .\main\models.py:24
+#: .\main\models.py:11 .\main\models.py:25
 msgid "content"
 msgstr "мазмун"
 
-#: .\main\models.py:11
+#: .\main\models.py:12
 msgid "author"
 msgstr "автор"
 
-#: .\main\models.py:12 .\main\models.py:25
+#: .\main\models.py:13 .\main\models.py:26
 msgid "date"
 msgstr "күнү"
 
-#: .\main\models.py:15
+#: .\main\models.py:16
 msgid "Post"
 msgstr "макала"
 
-#: .\main\models.py:16
+#: .\main\models.py:17
 msgid "Posts"
 msgstr "макалалар"
 
-#: .\main\models.py:26
+#: .\main\models.py:27
 msgid "date of expire"
 msgstr "Мөөнөтү өткөн күн"
 
-#: .\main\models.py:29
+#: .\main\models.py:30
 msgid "Notification"
 msgstr "Кулактандыруу"
 
-#: .\main\models.py:30
+#: .\main\models.py:31
 msgid "Notifications"
 msgstr "Кулактандыруулар"
 
 #: .\main\models.py:40
+msgid "teacher"
+msgstr "мугалим"
+
+#: .\main\models.py:43
 msgid "Necessary"
 msgstr "Керектүү"
 
-#: .\main\models.py:41
+#: .\main\models.py:44
 msgid "Optional"
 msgstr "Тандалма"
 
-#: .\main\models.py:43
+#: .\main\models.py:46
 msgid "type"
 msgstr "түр"
 
-#: .\main\models.py:44
+#: .\main\models.py:47
 msgid "term"
 msgstr "жарым жылдык"
 
-#: .\main\models.py:47
+#: .\main\models.py:50
 msgid "Lesson"
 msgstr "Сабак"
 
-#: .\main\models.py:48
+#: .\main\models.py:51
 msgid "Lessons"
 msgstr "Сабактар"
 
-#: .\main\models.py:56
+#: .\main\models.py:62
 msgid "image"
 msgstr "Сүрөт"
 
-#: .\main\models.py:59
+#: .\main\models.py:65
 msgid "Wallpaper"
 msgstr "Туш кагаз"
 
-#: .\main\models.py:60
+#: .\main\models.py:66
 msgid "Wallpapers"
 msgstr "Туш кагаздар"
 
-#: .\template\admin\base_site.html:34
+#: .\main\models.py:104
+msgid "lesson"
+msgstr "Сабак"
+
+#: .\main\models.py:105
+msgid "room"
+msgstr "бөлмө"
+
+#: .\main\models.py:106
+msgid "day"
+msgstr "күн"
+
+#: .\main\models.py:107
+msgid "time slot"
+msgstr "убакыт тилкеси"
+
+#: .\main\models.py:110
+#| msgid "sign up"
+msgid "Assign"
+msgstr "Дайындоо"
+
+#: .\main\models.py:111
+msgid "Assigns"
+msgstr "Дайындоолор"
+
+#: .\template\admin\base_site.html:27 .\template\admin\send_mass_mail.html:26
 msgid "Documentation"
 msgstr "Иш кагаз"
 
-#: .\template\admin\base_site.html:38
+#: .\template\admin\base_site.html:31 .\template\admin\send_mass_mail.html:30
 msgid "Change password"
 msgstr "сырсөз өзгөрт"
 
-#: .\template\admin\base_site.html:40
+#: .\template\admin\base_site.html:33 .\template\admin\send_mass_mail.html:32
 msgid "Log out"
 msgstr "чыгуу"
+
+#: .\template\admin\send_mass_mail.html:36
+msgid "Your email will be sent to following users:"
+msgstr "Сиздин экатыңыз төмөнкү колдонуучуларга жөнөтүлөт:"
 
 #: .\template\index.html:5
 msgid "home"
@@ -1453,155 +1486,201 @@ msgstr "биз менен программанын устасы бол"
 msgid "your advantages with us"
 msgstr "биз менен болгон пайдаң"
 
-#: .\template\registration\login.html:5
-msgid "login"
-msgstr "кирүү"
+#: .\template\lessons.html:6 .\users\models.py:61
+msgid "lessons"
+msgstr "Сабактар"
 
 #: .\template\registration\signup.html:5
-#: .\template\registration\signup_form.html:5
 msgid "sign up"
 msgstr "катталып кирүү"
 
-#: .\template\registration\signup_form.html:12
-msgid "Username"
-msgstr "колдонуучу аты"
+#: .\template\students.html:8
+msgid "students"
+msgstr "студенттер"
 
-#: .\template\registration\signup_form.html:17
-msgid "Email"
-msgstr "епочта"
+#: .\template\teachers.html:6
+msgid "teachers"
+msgstr "мугалимдер"
 
-#: .\template\registration\signup_form.html:23
-msgid "password"
-msgstr "сырсөз"
+#: .\template\timetable.html:10
+#| msgid "Time"
+msgid "Timetable"
+msgstr "Жүгүртмө"
 
-#: .\template\registration\signup_form.html:28
-#: .\template\registration\signup_form.html:33
-msgid "confirm password"
-msgstr "сырсөз тастыктоо"
+#: .\template\timetable.html:16
+#| msgid "room"
+msgid "By room"
+msgstr "бөлмө бойунча"
 
-#: .\ume\settings.py:135
+#: .\template\timetable.html:26
+#| msgid "teacher"
+msgid "By teacher"
+msgstr "мугалим бойунча"
+
+#: .\template\timetable.html:34
+msgid "My timetable"
+msgstr "Менин жүгүртмөм"
+
+#: .\ume\settings.py:137
 msgid "English"
 msgstr "Англисче"
 
-#: .\ume\settings.py:136
+#: .\ume\settings.py:138
 msgid "Kirghiz"
 msgstr "Кыргызча"
 
-#: .\ume\settings.py:137
+#: .\ume\settings.py:139
 msgid "Turkish"
 msgstr "Түркчө"
 
-#: .\users\admin.py:11
-msgid "Personal info"
-msgstr "өздүк маалымат"
+#: .\users\admin.py:37
+msgid ""
+"Mail sent successfully for selected "
+"{modeladmin.model._meta.verbose_name.title()}"
+msgstr ""
+"{modeladmin.model._meta.verbose_name.title()} үчүн экат ийгиликтүү жөнөтүлдү"
+
+#: .\users\admin.py:39
+msgid ""
+"Mail sent successfully for {len\n"
+"                (receiver_list)} {modeladmin.model._meta.verbose_name_plural.title()}"
+msgstr ""
+"{modeladmin.model._meta.verbose_name_plural.title()} мүчөлөрүнүн "
+"{len(receiver_list)} үчүн экат жеткиликтүү жөнөтүлдү"
+
+#: .\users\admin.py:49
+msgid "send email"
+msgstr "экат жөнөтүү"
+
+#: .\users\admin.py:59
+msgid "Permissions"
+msgstr "Жеткилер"
 
 #: .\users\apps.py:6 .\users\apps.py:9
 msgid "users"
 msgstr "колдонуучулар"
 
-#: .\users\models.py:8
+#: .\users\models.py:9
 msgid "ID"
 msgstr "ID"
 
-#: .\users\models.py:9
+#: .\users\models.py:10
 msgid "is teacher"
 msgstr "мугалим"
 
-#: .\users\models.py:10
+#: .\users\models.py:11
 msgid "is student"
 msgstr "студент"
 
-#: .\users\models.py:17 .\users\models.py:48
-#| msgid "users"
+#: .\users\models.py:20 .\users\models.py:53
 msgid "user"
 msgstr "колдонуучу"
 
-#: .\users\models.py:18
+#: .\users\models.py:21
 msgid "degree"
 msgstr "даражасы"
 
-#: .\users\models.py:19
+#: .\users\models.py:22
 msgid "rank"
 msgstr "даража"
 
-#: .\users\models.py:21 .\users\models.py:50
+#: .\users\models.py:24 .\users\models.py:55
 msgid "First course"
 msgstr "Биринчи курс"
 
-#: .\users\models.py:22 .\users\models.py:51
+#: .\users\models.py:25 .\users\models.py:56
 msgid "Second course"
 msgstr "экинчи курс"
 
-#: .\users\models.py:23 .\users\models.py:52
+#: .\users\models.py:26 .\users\models.py:57
 msgid "Third course"
 msgstr "үчүнчү курс"
 
-#: .\users\models.py:24 .\users\models.py:53
+#: .\users\models.py:27 .\users\models.py:58
 msgid "Fourth course"
 msgstr "төртүнчү курс"
 
-#: .\users\models.py:26
+#: .\users\models.py:29
 msgid "own group"
 msgstr "өз  тайпасы"
 
-#: .\users\models.py:27 .\users\models.py:57
-msgid "lessons"
-msgstr "Сабактар"
-
-#: .\users\models.py:29 .\users\models.py:59
+#: .\users\models.py:31 .\users\models.py:63
 msgid ""
 "Phone number must be entered in the format: '+996999999'. Up to 15 digits "
 "allowed"
 msgstr ""
 "уюлдук номуру +996999999 калыбында болуу керек. он беш сифра киргизиңиз."
 
-#: .\users\models.py:32 .\users\models.py:62
+#: .\users\models.py:34 .\users\models.py:66
 msgid "Please type in the correct format."
 msgstr " Сураныч туура калыпта киргизиңиз."
 
-#: .\users\models.py:33 .\users\models.py:63
+#: .\users\models.py:35 .\users\models.py:67
 msgid "phone"
 msgstr "номур"
 
-#: .\users\models.py:34 .\users\models.py:64
+#: .\users\models.py:36 .\users\models.py:68
 msgid "father"
 msgstr "атасы"
 
-#: .\users\models.py:35 .\users\models.py:65
+#: .\users\models.py:37 .\users\models.py:69
 msgid "mother"
 msgstr "апасы"
 
-#: .\users\models.py:36 .\users\models.py:66
+#: .\users\models.py:38 .\users\models.py:70
 msgid "address"
 msgstr "дарек"
 
-#: .\users\models.py:37 .\users\models.py:67
+#: .\users\models.py:39 .\users\models.py:71
 msgid "home address"
 msgstr "үй дареги"
 
-#: .\users\models.py:40
+#: .\users\models.py:42
 msgid "Teacher"
 msgstr "мугалим"
 
-#: .\users\models.py:41
+#: .\users\models.py:43
 msgid "Teachers"
 msgstr "мугалимдер"
 
-#: .\users\models.py:55
+#: .\users\models.py:60
 msgid "course"
 msgstr "курс"
 
-#: .\users\models.py:56
-msgid "curator"
-msgstr "жетекчи"
-
-#: .\users\models.py:70
+#: .\users\models.py:74
 msgid "Student"
 msgstr "студент"
 
-#: .\users\models.py:71
+#: .\users\models.py:75
 msgid "Students"
 msgstr "студенттер"
+
+#~ msgid "start time"
+#~ msgstr "Башталышы"
+
+#~ msgid "end time"
+#~ msgstr "Айагы"
+
+#~ msgid "login"
+#~ msgstr "кирүү"
+
+#~ msgid "Username"
+#~ msgstr "колдонуучу аты"
+
+#~ msgid "Email"
+#~ msgstr "епочта"
+
+#~ msgid "password"
+#~ msgstr "сырсөз"
+
+#~ msgid "confirm password"
+#~ msgstr "сырсөз тастыктоо"
+
+#~ msgid "Personal info"
+#~ msgstr "өздүк маалымат"
+
+#~ msgid "curator"
+#~ msgstr "жетекчи"
 
 #~ msgid "registration"
 #~ msgstr "катталуу"
