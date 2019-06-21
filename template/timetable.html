@@ -10,30 +10,7 @@
                         {% trans 'Timetable' %}
                     </h2>
                 </div>
-                            <ul class="nav nav-justified col-sm-1" style="background: #000;">
-                <li class="dropdown">
-                    <div class="dropper"><a href="#" class="dropdown-toggle"
-                                            data-toggle="dropdown">{% trans 'By room' %}</a>
-                        <ul class="dropdown-menu">
-                            {% for room in rooms %}
-                                <li><a href="{% url 'room' room.0 %}">{{ room.0 }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <div class="dropper"><a href="#" class="dropdown-toggle"
-                                            data-toggle="dropdown">{% trans 'By teacher' %}</a>
-                        <ul class="dropdown-menu">
-                            {% for teacher in teachers %}
-                                <li><a href="{% url 'teacher_table' teacher.user %}">{{ teacher.user.username }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="{% url 'self_table' %}">{% trans 'My timetable' %} </a></li>
 
-            </ul>
                 <div id="no-more-tables">
                     <div class="table-responsive">
                         <table class="col-sm-12 table table-bordered table-striped table- cf " id="dataTable"
