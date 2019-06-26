@@ -132,6 +132,21 @@ USE_L10N = True
 
 USE_TZ = True
 
+EXTRA_LANG_INFO = {
+    'ky': {
+        'bidi': False,
+        'code': 'ky',
+        'name': 'Kirghiz',
+        'name_local': u"Кыргызча",
+
+    },
+}
+# Add custom languages not provided by Django
+import django.conf.locale
+from django.conf import global_settings
+LANG_INFO = {**django.conf.locale.LANG_INFO, **EXTRA_LANG_INFO}
+django.conf.locale.LANG_INFO = LANG_INFO
+
 
 LANGUAGES = (
     ('en', _('English')),
@@ -148,21 +163,6 @@ MODELTRANSLATION_PREPOPULATE_LANGUAGE = 'en'
 MODELTRANSLATION_FALLBACK_LANGUAGES = {
     'default': ('en', 'tr')
 }
-
-EXTRA_LANG_INFO = {
-    'ky': {
-        'bidi': False,
-        'code': 'ky',
-        'name': 'Kirghiz',
-        'name_local': u"Кыргызча",
-
-    },
-}
-# Add custom languages not provided by Django
-import django.conf.locale
-from django.conf import global_settings
-LANG_INFO = {**django.conf.locale.LANG_INFO, **EXTRA_LANG_INFO}
-django.conf.locale.LANG_INFO = LANG_INFO
 
 
 MODELTRANSLATION_TRANSLATION_FILES = (
