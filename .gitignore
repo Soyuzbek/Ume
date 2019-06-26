@@ -84,6 +84,18 @@ celerybeat-schedule
 .env
 .venv
 env/
+
+# Excetions for env locales
+!env\Lib\site-packages\django\contrib\flatpages\locale\ky\LC_MESSAGES\django.po
+!env\Lib\site-packages\django\contrib\auth\locale\ky\LC_MESSAGES\django.po
+!env\Lib\site-packages\django\contrib\contenttypes\locale\ky\LC_MESSAGES\django.po
+!env\Lib\site-packages\django\contrib\humanize\locale\ky\LC_MESSAGES\django.po
+!env\Lib\site-packages\django\contrib\postgres\locale\ky\LC_MESSAGES\django.po
+!env\Lib\site-packages\django\contrib\redirects\locale\ky\LC_MESSAGES\django.po
+!env\Lib\site-packages\django\contrib\sessions\locale\ky\LC_MESSAGES\django.po
+env/Lib/site-packages/django/contrib/sites/locale/ky/LC_MESSAGES/django.po
+!env\Lib\site-packages\django\contrib\sites\locale\ky\LC_MESSAGES\django.po
+!env/Lib/site-packages/ckeditor/static
 venv/
 ENV/
 env.bak/
