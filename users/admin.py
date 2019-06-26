@@ -55,7 +55,7 @@ class StudentAdmin(TranslationStackedInline):
 
 @admin.register(User)
 class UserAdmin(TabbedTranslationAdmin):
-    fieldsets = ((None, {'fields': ('id', 'email', 'is_teacher', 'is_student')}),)
+    fieldsets = ((None, {'fields': ('id', 'email', 'username', 'is_teacher', 'is_student')}),)
     fieldsets += (_('Permissions'), {
         'fields': ('is_active', 'is_staff', 'is_superuser'),
     }),
