@@ -83,10 +83,39 @@ celerybeat-schedule
 # Environments
 .env
 .venv
-env/
+env/*
+env/Lib/*
+env/Lib/site-packages/*
+env/Lib/site-packages/django/*
+env/Lib/site-packages/django/contrib/*
+env/Lib/site-packages/django/contrib/flatpages/*
+env/Lib/site-packages/django/contrib/flatpages/locale/*
+env/Lib/site-packages/django/contrib/auth/*
+env/Lib/site-packages/django/contrib/auth/locale*
+env/Lib/site-packages/django/contrib/contenttypes/*
+env/Lib/site-packages/django/contrib/contenttypes/locale/*
+env/Lib/site-packages/django/contrib/humanize/*
+env/Lib/site-packages/django/contrib/humanize/locale/*
+env/Lib/site-packages/django/contrib/postgres/*
+env/Lib/site-packages/django/contrib/postgres/locale/*
+env/Lib/site-packages/django/contrib/redirects/*
+env/Lib/site-packages/django/contrib/redirects/locale/*
+env/Lib/site-packages/django/contrib/sessions/*
+env/Lib/site-packages/django/contrib/sessions/locale/*
+env/Lib/site-packages/django/contrib/sites/*
+env/Lib/site-packages/django/contrib/sites/locale/*
+env/Lib/site-packages/ckeditor/*
+
+
+
+
+
+
+
+
 
 # Excetions for env locales
-!env/Lib/site-packages/django/contrib/flatpages/locale/ky/LC_MESSAGES/django.po
+!env/Lib/site-packages/django/contrib/flatpages/locale/ky/
 !env/Lib/site-packages/django/contrib/auth/locale/ky/LC_MESSAGES/django.po
 !env/Lib/site-packages/django/contrib/contenttypes/locale/ky/LC_MESSAGES/django.po
 !env/Lib/site-packages/django/contrib/humanize/locale/ky/LC_MESSAGES/django.po
