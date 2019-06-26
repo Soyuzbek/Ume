@@ -1,0 +1,678 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-20 19:19+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\env\Lib\site-packages\debug_toolbar\apps.py:15
+msgid "Debug Toolbar"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\cache.py:216
+msgid "Cache"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\cache.py:222
+#, python-format
+msgid "%(cache_calls)d call in %(time).2fms"
+msgid_plural "%(cache_calls)d calls in %(time).2fms"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\cache.py:231
+#, python-format
+msgid "Cache calls from %(count)d backend"
+msgid_plural "Cache calls from %(count)d backends"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\headers.py:37
+msgid "Headers"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\logging.py:65
+msgid "Logging"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\logging.py:71
+#, python-format
+msgid "%(count)s message"
+msgid_plural "%(count)s messages"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\logging.py:75
+msgid "Log messages"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\profiling.py:153
+msgid "Profiling"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\redirects.py:16
+msgid "Intercept redirects"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\request.py:19
+msgid "Request"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\request.py:40
+msgid "<no view>"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\request.py:51
+msgid "<unavailable>"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\settings.py:19
+msgid "Settings"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\settings.py:22
+#, python-format
+msgid "Settings from <code>%s</code>"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\signals.py:49
+#, python-format
+msgid "%(num_receivers)d receiver of 1 signal"
+msgid_plural "%(num_receivers)d receivers of 1 signal"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\signals.py:54
+#, python-format
+msgid "%(num_receivers)d receiver of %(num_signals)d signals"
+msgid_plural "%(num_receivers)d receivers of %(num_signals)d signals"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\signals.py:59
+msgid "Signals"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\sql\panel.py:25
+msgid "Autocommit"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\sql\panel.py:26
+msgid "Read uncommitted"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\sql\panel.py:27
+msgid "Read committed"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\sql\panel.py:28
+msgid "Repeatable read"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\sql\panel.py:29
+msgid "Serializable"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\sql\panel.py:41
+msgid "Idle"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\sql\panel.py:42
+msgid "Active"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\sql\panel.py:43
+msgid "In transaction"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\sql\panel.py:44
+msgid "In error"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\sql\panel.py:45
+msgid "Unknown"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\sql\panel.py:110
+msgid "SQL"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\staticfiles.py:89
+#, python-format
+msgid "Static files (%(num_found)s found, %(num_used)s used)"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\staticfiles.py:113
+msgid "Static files"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\staticfiles.py:119
+#, python-format
+msgid "%(num_used)s file used"
+msgid_plural "%(num_used)s files used"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\templates\panel.py:171
+msgid "Templates"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\templates\panel.py:176
+#, python-format
+msgid "Templates (%(num_templates)s rendered)"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\templates\panel.py:210
+msgid "No origin"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\timer.py:26
+#, python-format
+msgid "CPU: %(cum)0.2fms (%(total)0.2fms)"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\timer.py:31
+#, python-format
+msgid "Total: %0.2fms"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\timer.py:37
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\logging.html:7
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql_explain.html:11
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql_profile.html:12
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql_select.html:11
+msgid "Time"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\timer.py:45
+msgid "User CPU time"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\timer.py:45
+#, python-format
+msgid "%(utime)0.3f msec"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\timer.py:46
+msgid "System CPU time"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\timer.py:46
+#, python-format
+msgid "%(stime)0.3f msec"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\timer.py:47
+msgid "Total CPU time"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\timer.py:47
+#, python-format
+msgid "%(total)0.3f msec"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\timer.py:48
+msgid "Elapsed time"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\timer.py:48
+#, python-format
+msgid "%(total_time)0.3f msec"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\timer.py:50
+msgid "Context switches"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\timer.py:51
+#, python-format
+msgid "%(vcsw)d voluntary, %(ivcsw)d involuntary"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\panels\versions.py:21
+msgid "Versions"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\base.html:14
+msgid "Hide toolbar"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\base.html:14
+msgid "Hide"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\base.html:20
+msgid "Disable for next and successive requests"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\base.html:20
+msgid "Enable for next and successive requests"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\base.html:42
+msgid "Show toolbar"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\cache.html:2
+msgid "Summary"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\cache.html:6
+msgid "Total calls"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\cache.html:7
+msgid "Total time"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\cache.html:8
+msgid "Cache hits"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\cache.html:9
+msgid "Cache misses"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\cache.html:21
+msgid "Commands"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\cache.html:39
+msgid "Calls"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\cache.html:43
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql.html:30
+msgid "Time (ms)"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\cache.html:44
+msgid "Type"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\cache.html:45
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\request.html:8
+msgid "Arguments"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\cache.html:46
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\request.html:9
+msgid "Keyword arguments"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\cache.html:47
+msgid "Backend"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\headers.html:3
+msgid "Request headers"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\headers.html:8
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\headers.html:27
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\headers.html:48
+msgid "Key"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\headers.html:9
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\headers.html:28
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\headers.html:49
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\request.html:33
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\request.html:59
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\request.html:85
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\request.html:110
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\settings.html:6
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\timer.html:11
+msgid "Value"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\headers.html:22
+msgid "Response headers"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\headers.html:41
+msgid "WSGI environ"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\headers.html:43
+msgid ""
+"Since the WSGI environ inherits the environment of the server, only a "
+"significant subset is shown below."
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\logging.html:6
+msgid "Level"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\logging.html:8
+msgid "Channel"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\logging.html:9
+msgid "Message"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\logging.html:10
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\staticfiles.html:44
+msgid "Location"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\logging.html:26
+msgid "No messages logged"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\profiling.html:5
+msgid "Call"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\profiling.html:6
+msgid "CumTime"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\profiling.html:7
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\profiling.html:9
+msgid "Per"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\profiling.html:8
+msgid "TotTime"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\profiling.html:10
+msgid "Count"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\request.html:3
+msgid "View information"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\request.html:7
+msgid "View function"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\request.html:10
+msgid "URL name"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\request.html:24
+msgid "Cookies"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\request.html:32
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\request.html:58
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\request.html:84
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\request.html:109
+msgid "Variable"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\request.html:46
+msgid "No cookies"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\request.html:50
+msgid "Session data"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\request.html:72
+msgid "No session data"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\request.html:76
+msgid "GET data"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\request.html:98
+msgid "No GET data"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\request.html:102
+msgid "POST data"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\request.html:123
+msgid "No POST data"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\settings.html:5
+msgid "Setting"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\signals.html:5
+msgid "Signal"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\signals.html:6
+msgid "Providing"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\signals.html:7
+msgid "Receivers"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql.html:7
+#, python-format
+msgid "%(num)s query"
+msgid_plural "%(num)s queries"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql.html:9
+#, python-format
+msgid ""
+"including <abbr title=\"Similar queries are queries with the same SQL, but "
+"potentially different parameters.\">%(count)s similar</abbr>"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql.html:13
+#, python-format
+msgid ""
+"and <abbr title=\"Duplicate queries are identical to each other: they "
+"execute exactly the same SQL and parameters.\">%(dupes)s duplicates</abbr>"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql.html:28
+msgid "Query"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql.html:29
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\timer.html:36
+msgid "Timeline"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql.html:31
+msgid "Action"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql.html:48
+#, python-format
+msgid "%(count)s similar queries."
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql.html:54
+#, python-format
+msgid "Duplicated %(dupes)s times."
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql.html:86
+msgid "Connection:"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql.html:88
+msgid "Isolation level:"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql.html:91
+msgid "Transaction status:"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql.html:105
+msgid "(unknown)"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql.html:114
+msgid "No SQL queries were recorded during this request."
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql_explain.html:4
+msgid "SQL explained"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql_explain.html:9
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql_profile.html:10
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql_select.html:9
+msgid "Executed SQL"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql_explain.html:13
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql_profile.html:14
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql_select.html:13
+msgid "Database"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql_profile.html:4
+msgid "SQL profiled"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql_profile.html:37
+msgid "Error"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql_select.html:4
+msgid "SQL selected"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\sql_select.html:36
+msgid "Empty set"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\staticfiles.html:3
+msgid "Static file path"
+msgid_plural "Static file paths"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\staticfiles.html:7
+#, python-format
+msgid "(prefix %(prefix)s)"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\staticfiles.html:11
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\staticfiles.html:22
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\staticfiles.html:34
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\templates.html:10
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\templates.html:30
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\templates.html:47
+msgid "None"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\staticfiles.html:14
+msgid "Static file app"
+msgid_plural "Static file apps"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\staticfiles.html:25
+msgid "Static file"
+msgid_plural "Static files"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\staticfiles.html:39
+#, python-format
+msgid "%(payload_count)s file"
+msgid_plural "%(payload_count)s files"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\staticfiles.html:43
+msgid "Path"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\template_source.html:4
+msgid "Template source:"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\templates.html:2
+msgid "Template path"
+msgid_plural "Template paths"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\templates.html:13
+msgid "Template"
+msgid_plural "Templates"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\templates.html:22
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\templates.html:40
+msgid "Toggle context"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\templates.html:33
+msgid "Context processor"
+msgid_plural "Context processors"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\timer.html:2
+msgid "Resource usage"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\timer.html:10
+msgid "Resource"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\timer.html:26
+msgid "Browser timing"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\timer.html:35
+msgid "Timing attribute"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\timer.html:37
+msgid "Milliseconds since navigation start (+length)"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\versions.html:10
+msgid "Package"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\versions.html:11
+msgid "Name"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\panels\versions.html:12
+msgid "Version"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\redirect.html:8
+msgid "Location:"
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\templates\debug_toolbar\redirect.html:10
+msgid ""
+"The Django Debug Toolbar has intercepted a redirect to the above URL for "
+"debug viewing purposes. You can click the above link to continue with the "
+"redirect as normal."
+msgstr ""
+
+#: .\env\Lib\site-packages\debug_toolbar\views.py:17
+msgid ""
+"Data for this panel isn't available anymore. Please reload the page and "
+"retry."
+msgstr ""

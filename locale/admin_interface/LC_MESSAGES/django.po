@@ -1,0 +1,204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-20 19:19+0600\n"
+"PO-Revision-Date: 2019-05-26 12:25+0000\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Translated-Using: django-rosetta 0.9.2\n"
+
+#: .\env\Lib\site-packages\admin_interface\admin.py:21
+msgid "Environment"
+msgstr "Чөйрө"
+
+#: .\env\Lib\site-packages\admin_interface\admin.py:30
+msgid "Logo"
+msgstr "Эн тамга"
+
+#: .\env\Lib\site-packages\admin_interface\admin.py:38
+msgid "Favicon"
+msgstr "икон"
+
+#: .\env\Lib\site-packages\admin_interface\admin.py:42
+msgid "Title"
+msgstr "Кону"
+
+#: .\env\Lib\site-packages\admin_interface\admin.py:50
+msgid "Header"
+msgstr "Башы"
+
+#: .\env\Lib\site-packages\admin_interface\admin.py:59
+msgid "Breadcrumbs / Module headers"
+msgstr "Сындырымдар / Модул баштары"
+
+#: .\env\Lib\site-packages\admin_interface\admin.py:69
+msgid "Generic Links"
+msgstr "Түзүлүүчү Шилтемелер"
+
+#: .\env\Lib\site-packages\admin_interface\admin.py:76
+msgid "Save Buttons"
+msgstr "Сактоо баскычтары"
+
+#: .\env\Lib\site-packages\admin_interface\admin.py:84
+msgid "Delete Buttons"
+msgstr "Өчүрүү баскычтары"
+
+#: .\env\Lib\site-packages\admin_interface\admin.py:92
+msgid "Related Modal"
+msgstr "Байланышкан Модал"
+
+#: .\env\Lib\site-packages\admin_interface\admin.py:102
+msgid "List Filter"
+msgstr "Чыпка тизмеси"
+
+#: .\env\Lib\site-packages\admin_interface\admin.py:106
+msgid "Recent Actions"
+msgstr "Акыркы Аракеттер"
+
+#: .\env\Lib\site-packages\admin_interface\apps.py:11
+msgid "Admin Interface"
+msgstr "Башкарма Терезеси"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:72
+#: .\env\Lib\site-packages\admin_interface\models.py:116
+msgid "name"
+msgstr "аты"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:75
+#: .\env\Lib\site-packages\admin_interface\models.py:240
+msgid "active"
+msgstr "жандуу"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:79
+#: .\env\Lib\site-packages\admin_interface\templates\admin\base_site.html:6
+#: .\env\Lib\site-packages\admin_interface\templates\admin\base_site.html:60
+msgid "Django administration"
+msgstr "Жанго Башкармасы"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:81
+msgid "title"
+msgstr "наам"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:87
+#: .\env\Lib\site-packages\admin_interface\models.py:102
+#: .\env\Lib\site-packages\admin_interface\models.py:122
+msgid "color"
+msgstr "түс"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:90
+#: .\env\Lib\site-packages\admin_interface\models.py:105
+#: .\env\Lib\site-packages\admin_interface\models.py:276
+msgid "visible"
+msgstr "көрүнчүү"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:95
+msgid "Leave blank to use the default Django logo"
+msgstr "Баштапкы Жанго логосун колдонуу үчүн бош калтырыңыз"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:96
+msgid "logo"
+msgstr "лого"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:110
+msgid "(.ico|.png|.gif - 16x16|32x32 px)"
+msgstr "(.ico|.png|.gif - 16x16|32x32 px)"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:111
+msgid "favicon"
+msgstr "икон"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:120
+msgid ""
+"(red: #E74C3C, orange: #E67E22, yellow: #F1C40F, green: #2ECC71, blue: "
+"#3498DB)"
+msgstr ""
+"(red: #E74C3C, orange: #E67E22, yellow: #F1C40F, green: #2ECC71, blue: "
+"#3498DB)"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:125
+msgid "visible in header (marker and name)"
+msgstr "баштыкта көрүнөт (аты жана белгиси)"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:128
+msgid "visible in favicon (marker)"
+msgstr "икондо көрүнөт (белги)"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:135
+#: .\env\Lib\site-packages\admin_interface\models.py:160
+#: .\env\Lib\site-packages\admin_interface\models.py:201
+#: .\env\Lib\site-packages\admin_interface\models.py:220
+#: .\env\Lib\site-packages\admin_interface\models.py:246
+msgid "background color"
+msgstr "арка түсү"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:141
+#: .\env\Lib\site-packages\admin_interface\models.py:166
+#: .\env\Lib\site-packages\admin_interface\models.py:213
+#: .\env\Lib\site-packages\admin_interface\models.py:232
+#: .\env\Lib\site-packages\admin_interface\models.py:236
+msgid "text color"
+msgstr "сап түсү"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:147
+#: .\env\Lib\site-packages\admin_interface\models.py:172
+#: .\env\Lib\site-packages\admin_interface\models.py:188
+msgid "link color"
+msgstr "шилтем түсү"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:153
+#: .\env\Lib\site-packages\admin_interface\models.py:178
+#: .\env\Lib\site-packages\admin_interface\models.py:194
+msgid "link hover color"
+msgstr "кармалган шилтеме түсү"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:181
+#: .\env\Lib\site-packages\admin_interface\models.py:266
+msgid "rounded corners"
+msgstr "жылмаланган бурчтар"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:207
+#: .\env\Lib\site-packages\admin_interface\models.py:226
+msgid "background hover color"
+msgstr "кармалган арка түсү"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:263
+msgid "background opacity"
+msgstr "арканын тунуктугу"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:269
+msgid "close button visible"
+msgstr "жабуучу баскыч көрүнүүчүлүгү"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:273
+msgid "use dropdown"
+msgstr "жайылчуну колдон"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:285
+msgid "Theme"
+msgstr "Тема"
+
+#: .\env\Lib\site-packages\admin_interface\models.py:286
+msgid "Themes"
+msgstr "Темалар"
+
+#: .\env\Lib\site-packages\admin_interface\templates\admin\filter.html:13
+#: .\env\Lib\site-packages\admin_interface\templates\admin_interface\dropdown_filter.html:4
+#, python-format
+msgid " By %(filter_title)s "
+msgstr "%(filter_title)s бойунча "
+
+#: .\env\Lib\site-packages\admin_interface\templates\admin\popup_response.html:3
+msgid "Popup closing..."
+msgstr "Жалтаң жабылуу"
