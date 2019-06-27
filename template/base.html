@@ -54,7 +54,19 @@
                         <li><a href="{% url 'signup' %}">{% trans 'Sign up' %}</a></li>
                         <li><a href="{% url 'login' %}">{% trans 'Log in    ' %}</a></li>
                     {% endif %}
-
+                    <li>
+                    {% get_available_languages as langs %}
+                    {% get_current_language as curr %}
+                    {% for lang, val in langs %}
+                        {% ifnotequal lang curr %}
+                            <li><a style="border-right: none; padding: 0; margin: 0; "
+                               href="{% url 'lang' lang %}">
+                                {{ lang }}
+                            </a></li>
+                        {% endifnotequal %}
+                    {% endfor %}
+                    </li>
+                </ul>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

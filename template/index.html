@@ -6,35 +6,31 @@
 {% endblock %}
 {% block content %}
     <section class="slider">
-        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="item active"><img data-src="images/slider/image_1975x740.jpg" alt="Second slide"
-                                              src="{{ wallpaper.image.url }}">
-                </div>
-            </div>
+        <div class="parallax" style="background-image: url('{{ wallpapers.0.image.url }}');"></div>
     </section>
     <section class="main__middle__container">
         <div class="container">
-            <div class="row with__sep">
+            <div class="row ">
                 <h3 class="text-center">{% trans 'Our department teach not only natural science but also modern technology' %}
                 </h3>
                 <p class="text-center big-paragraph">{% trans 'Let you become a professional programmer with us' %}</p>
             </div>
+            <div class="dc_divider5"></div>
             <div class="row no_padding icons__blocks text-center">
                 <h2 class="page_title"><span>{% trans 'your advantages with us' %}</span><br/>
                     <span class="sep"></span><br/>
-                    <!-- <small>Cras ornare tristique elit</small> -->
                 </h2>
-                <p><a href="{% url 'advantage' %}" class="btn btn-primary btn-lg">Learn more</a></p>
+                <p><a href="{% url 'advantage' %}" class="btn btn-primary btn-lg">{% trans 'Learn more' %}</a></p>
             </div>
         </div>
+        <div class="parallax" style="background-image: url('{{ wallpapers.1.image.url }}');"></div>
         <div class="row grey-info-block text-center">
             <div class="container">
                 <h2 class="page_title"><a href="{% url 'about' %}"><span>{% trans 'About us' %}</span></a><br/>
                     <span class="sep"></span><br/>
                     <small>{% trans 'Our department founded in 2007' %}</small>
                 </h2>
-              {{ about.content|safe }}
+                {{ about.content|safe }}
                 <div class="clear"></div>
             </div>
         </div>
@@ -45,12 +41,4 @@
     <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <script type="text/javascript">
-
-        $('.carousel').carousel({
-            interval: 3500, // in milliseconds
-            pause: 'none' // set to 'true' to pause slider on mouse hover
-        })
-
-    </script>
 {% endblock %}

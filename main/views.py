@@ -3,12 +3,12 @@ from urllib.parse import unquote
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
 from django.utils.decorators import method_decorator
+from django.utils.translation import gettext_lazy as _
 from django.views import View
 from django.views.generic import ListView, DetailView
 
 from main.models import Wallpaper, Post, Lesson, Assign
 from users.models import Teacher
-
 
 class LanguageView(View):
 
@@ -22,9 +22,9 @@ class IndexView(View):
     template_name = 'index.html'
 
     def get(self, request):
-        wallpaper = Wallpaper.objects.first()
-        about = Post.objects.filter(name='About us').first()
-        advantage = Post.objects.filter(name='Your advantages').first()
+        wallpapers = Wallpaper.objects.all()
+        about = Post.objects.filter(name=_('About us')).first()
+        advantage = Post.objects.filter(name=_('Your advantages')).first()
         rooms = Assign.ROOM_CHOICES
         teachers = Teacher.objects.all()
         return render(request, self.template_name, locals())
