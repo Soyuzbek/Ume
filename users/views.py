@@ -53,10 +53,7 @@ class LoginView(View):
     template_name = 'registration/login.html'
 
     def get(self, request, **kwargs):
-        if request.GET.get('next') == '':
-            request.GET['next'] = '/'
         form = self.form_class({'next': request.GET.get('next', '/')})
-        # form = self.form_class()
         return render(request, self.template_name, locals())
 
     def post(self, request):
