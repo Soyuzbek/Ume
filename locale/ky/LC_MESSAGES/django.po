@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-20 19:19+0600\n"
-"PO-Revision-Date: 2019-06-20 19:22+0458\n"
-"Last-Translator: b'  <>'\n"
+"POT-Creation-Date: 2019-06-27 00:06+0600\n"
+"PO-Revision-Date: 2019-06-27 00:13+0458\n"
+"Last-Translator: b'  <soyuzbek196.kg@gmail.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -1410,7 +1410,7 @@ msgstr "жарым жылдык"
 msgid "Lesson"
 msgstr "Сабак"
 
-#: .\main\models.py:51
+#: .\main\models.py:51 .\template\base.html:65
 msgid "Lessons"
 msgstr "Сабактар"
 
@@ -1443,7 +1443,6 @@ msgid "time slot"
 msgstr "убакыт тилкеси"
 
 #: .\main\models.py:110
-#| msgid "sign up"
 msgid "Assign"
 msgstr "Дайындоо"
 
@@ -1463,9 +1462,84 @@ msgstr "сырсөз өзгөрт"
 msgid "Log out"
 msgstr "чыгуу"
 
-#: .\template\admin\send_mass_mail.html:36
+#: .\template\admin\base_site.html:34 .\template\admin\send_mass_mail.html:33
+msgid "Project"
+msgstr "Долбоор"
+
+#: .\template\admin\send_mass_mail.html:37
 msgid "Your email will be sent to following users:"
 msgstr "Сиздин экатыңыз төмөнкү колдонуучуларга жөнөтүлөт:"
+
+#: .\template\base.html:55 .\template\timetable.html:4
+#: .\template\timetable.html:40
+msgid "Timetable"
+msgstr "Жүгүртмө"
+
+#: .\template\base.html:57
+msgid "By room"
+msgstr "бөлмө бойунча"
+
+#: .\template\base.html:58
+msgid "By teacher"
+msgstr "мугалим бойунча"
+
+#: .\template\base.html:59
+#| msgid "lesson"
+msgid "By lesson"
+msgstr "Сабак бойунча"
+
+#: .\template\base.html:60
+msgid "My timetable"
+msgstr "Менин жүгүртмөм"
+
+#: .\template\base.html:64 .\users\models.py:89
+msgid "Students"
+msgstr "студенттер"
+
+#: .\template\base.html:67
+msgid "Profile"
+msgstr "Профил"
+
+#: .\template\base.html:68
+msgid "Logout"
+msgstr "Чыгуу"
+
+#: .\template\base.html:70
+#| msgid "sign up"
+msgid "Sign up"
+msgstr "катталып кирүү"
+
+#: .\template\base.html:71
+msgid "Log in    "
+msgstr "Кирүү"
+
+#: .\template\base.html:88
+msgid "About"
+msgstr "Маалымат"
+
+#: .\template\base.html:111
+msgid "Social"
+msgstr "Байланыш"
+
+#: .\template\base.html:113
+msgid "56, Chingiz Aytmatov st"
+msgstr "Чыңгыз Айтматов кү. 56"
+
+#: .\template\base.html:114
+msgid "Bishkek, 720044"
+msgstr "Бишкек, 720044"
+
+#: .\template\base.html:115
+msgid "Kyrgyzstan"
+msgstr "Кыргызстан"
+
+#: .\template\base.html:117
+msgid "Phone 0312233445"
+msgstr "Тел: 0312233445"
+
+#: .\template\base.html:118
+msgid "Fax 0312122334"
+msgstr "Факс: 0312122334"
 
 #: .\template\index.html:5
 msgid "home"
@@ -1486,50 +1560,55 @@ msgstr "биз менен программанын устасы бол"
 msgid "your advantages with us"
 msgstr "биз менен болгон пайдаң"
 
-#: .\template\lessons.html:6 .\users\models.py:61
+#: .\template\lessons.html:6 .\users\models.py:75
 msgid "lessons"
 msgstr "Сабактар"
 
-#: .\template\registration\signup.html:5
+#: .\template\registration\login.html:11 .\users\models.py:9
+msgid "ID"
+msgstr "ID"
+
+#: .\template\registration\login.html:15
+#| msgid "password"
+msgid "Password"
+msgstr "сырсөз"
+
+#: .\template\registration\login.html:18
+#| msgid "login"
+msgid "Login"
+msgstr "кирүү"
+
+#: .\template\registration\signup.html:4
 msgid "sign up"
 msgstr "катталып кирүү"
 
-#: .\template\students.html:8
-msgid "students"
-msgstr "студенттер"
+#: .\template\registration\signup.html:7
+#| msgid "is student"
+msgid "sign up as a student"
+msgstr "студент катары катталуу"
+
+#: .\template\registration\signup.html:8
+#| msgid "is teacher"
+msgid "sign up as a teacher"
+msgstr "мугалим катары катталуу"
+
+#: .\template\students.html:12
+msgid "Username"
+msgstr "колдонуучу аты"
 
 #: .\template\teachers.html:6
 msgid "teachers"
 msgstr "мугалимдер"
 
-#: .\template\timetable.html:10
-#| msgid "Time"
-msgid "Timetable"
-msgstr "Жүгүртмө"
-
-#: .\template\timetable.html:16
-#| msgid "room"
-msgid "By room"
-msgstr "бөлмө бойунча"
-
-#: .\template\timetable.html:26
-#| msgid "teacher"
-msgid "By teacher"
-msgstr "мугалим бойунча"
-
-#: .\template\timetable.html:34
-msgid "My timetable"
-msgstr "Менин жүгүртмөм"
-
-#: .\ume\settings.py:137
+#: .\ume\settings.py:152
 msgid "English"
 msgstr "Англисче"
 
-#: .\ume\settings.py:138
+#: .\ume\settings.py:153
 msgid "Kirghiz"
 msgstr "Кыргызча"
 
-#: .\ume\settings.py:139
+#: .\ume\settings.py:154
 msgid "Turkish"
 msgstr "Түркчө"
 
@@ -1560,10 +1639,6 @@ msgstr "Жеткилер"
 msgid "users"
 msgstr "колдонуучулар"
 
-#: .\users\models.py:9
-msgid "ID"
-msgstr "ID"
-
 #: .\users\models.py:10
 msgid "is teacher"
 msgstr "мугалим"
@@ -1572,88 +1647,109 @@ msgstr "мугалим"
 msgid "is student"
 msgstr "студент"
 
-#: .\users\models.py:20 .\users\models.py:53
+#: .\users\models.py:12
+#| msgid ""
+#| "Enter a valid 'slug' consisting of letters, numbers, underscores or hyphens."
+msgid ""
+"Enter a valid username. This value may contain only letters,numbers, spaces "
+"and @/./+/-/_ characters."
+msgstr ""
+"Туура колдонуучу ысмын териңиз. Бул маани тамга, сан, боштук жана @/./+/-/_ "
+"кабыл ала алат."
+
+#: .\users\models.py:15
+#| msgid "Username"
+msgid "username"
+msgstr "колдонуучу аты"
+
+#: .\users\models.py:18
+msgid "Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only."
+msgstr "Талап кылынат. 150 арип же аз, сан жана @/./+/-/_ гана териле алат."
+
+#: .\users\models.py:21
+msgid "A user with that username already exists."
+msgstr "Бул ысым менен башка колдонуучу бар"
+
+#: .\users\models.py:35 .\users\models.py:67
 msgid "user"
 msgstr "колдонуучу"
 
-#: .\users\models.py:21
+#: .\users\models.py:36
 msgid "degree"
 msgstr "даражасы"
 
-#: .\users\models.py:22
-msgid "rank"
-msgstr "даража"
-
-#: .\users\models.py:24 .\users\models.py:55
+#: .\users\models.py:38 .\users\models.py:69
 msgid "First course"
 msgstr "Биринчи курс"
 
-#: .\users\models.py:25 .\users\models.py:56
+#: .\users\models.py:39 .\users\models.py:70
 msgid "Second course"
 msgstr "экинчи курс"
 
-#: .\users\models.py:26 .\users\models.py:57
+#: .\users\models.py:40 .\users\models.py:71
 msgid "Third course"
 msgstr "үчүнчү курс"
 
-#: .\users\models.py:27 .\users\models.py:58
+#: .\users\models.py:41 .\users\models.py:72
 msgid "Fourth course"
 msgstr "төртүнчү курс"
 
-#: .\users\models.py:29
+#: .\users\models.py:43
 msgid "own group"
 msgstr "өз  тайпасы"
 
-#: .\users\models.py:31 .\users\models.py:63
+#: .\users\models.py:45 .\users\models.py:50 .\users\models.py:77
 msgid ""
 "Phone number must be entered in the format: '+996999999'. Up to 15 digits "
 "allowed"
 msgstr ""
 "уюлдук номуру +996999999 калыбында болуу керек. он беш сифра киргизиңиз."
 
-#: .\users\models.py:34 .\users\models.py:66
+#: .\users\models.py:48 .\users\models.py:80
 msgid "Please type in the correct format."
 msgstr " Сураныч туура калыпта киргизиңиз."
 
-#: .\users\models.py:35 .\users\models.py:67
+#: .\users\models.py:52 .\users\models.py:81
 msgid "phone"
 msgstr "номур"
 
-#: .\users\models.py:36 .\users\models.py:68
-msgid "father"
-msgstr "атасы"
-
-#: .\users\models.py:37 .\users\models.py:69
-msgid "mother"
-msgstr "апасы"
-
-#: .\users\models.py:38 .\users\models.py:70
+#: .\users\models.py:53 .\users\models.py:84
 msgid "address"
 msgstr "дарек"
 
-#: .\users\models.py:39 .\users\models.py:71
-msgid "home address"
-msgstr "үй дареги"
-
-#: .\users\models.py:42
+#: .\users\models.py:56
 msgid "Teacher"
 msgstr "мугалим"
 
-#: .\users\models.py:43
+#: .\users\models.py:57
 msgid "Teachers"
 msgstr "мугалимдер"
 
-#: .\users\models.py:60
+#: .\users\models.py:74
 msgid "course"
 msgstr "курс"
 
-#: .\users\models.py:74
+#: .\users\models.py:82
+msgid "father"
+msgstr "атасы"
+
+#: .\users\models.py:83
+msgid "mother"
+msgstr "апасы"
+
+#: .\users\models.py:85
+msgid "home address"
+msgstr "үй дареги"
+
+#: .\users\models.py:88
 msgid "Student"
 msgstr "студент"
 
-#: .\users\models.py:75
-msgid "Students"
-msgstr "студенттер"
+#~ msgid "students"
+#~ msgstr "студенттер"
+
+#~ msgid "rank"
+#~ msgstr "даража"
 
 #~ msgid "start time"
 #~ msgstr "Башталышы"
@@ -1661,17 +1757,8 @@ msgstr "студенттер"
 #~ msgid "end time"
 #~ msgstr "Айагы"
 
-#~ msgid "login"
-#~ msgstr "кирүү"
-
-#~ msgid "Username"
-#~ msgstr "колдонуучу аты"
-
 #~ msgid "Email"
 #~ msgstr "епочта"
-
-#~ msgid "password"
-#~ msgstr "сырсөз"
 
 #~ msgid "confirm password"
 #~ msgstr "сырсөз тастыктоо"

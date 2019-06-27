@@ -12,6 +12,7 @@
     <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'shortcodes/shortcodes.css' %}">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -33,63 +34,27 @@
             </div>
             <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav nav-justified">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                        <div class="dropper"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="index_boxed.html">Home / Boxed</a></li>
-                                <li><a href="index_with_blog.html">Home + Blog</a></li>
-                                <li><a href="portfolio.html">Portfolio</a></li>
-                                <li><a href="typography.html">Typography</a></li>
-                                <li><a href="shortcodes.html">Shortcodes</a></li>
-                                <li><a href="store.html">Web Store</a></li>
-                                <li><a href="blog.html">Blog & News</a></li>
-                                <li><a href="tables.html">Tables</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
-                            </ul>
-                        </div>
-                    </li>
+                    <li class="active"><a href="{% url 'home' %}">Home</a></li>
                     <li class="dropdown">
                         <div class="dropper"><a href="#" class="dropdown-toggle"
-                                                data-toggle="dropdown">{% trans 'Time table' %}</a>
+                                                data-toggle="dropdown">{% trans 'Timetable' %}</a>
                             <ul class="dropdown-menu">
-                                <li class="dropdown">
-                                    <div class="dropper"><a href="#" class="dropdown-toggle"
-                                                            data-toggle="dropdown">{% trans 'By room' %}</a>
-                                        <ul class="dropdown-menu">
-                                            {% for room in rooms %}
-                                                <li><a href="{% url 'room' room.0 %}">{{ room.0 }}</a></li>
-                                            {% endfor %}
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="dropdown">
-                                    <div class="dropper"><a href="#" class="dropdown-toggle"
-                                                            data-toggle="dropdown">{% trans 'By teacher' %}</a>
-                                        <ul class="dropdown-menu">
-                                            {% for teacher in teachers %}
-                                                <li>
-                                                    <a href="{% url 'teacher_table' teacher.user %}">{{ teacher.user.username }}</a>
-                                                </li>
-                                            {% endfor %}
-                                        </ul>
-                                    </div>
-                                </li>
+                                <li><a href="{% url 'timetable' 'by_room' %}">{% trans 'By room' %}</a></li>
+                                <li><a href="{% url 'timetable' 'by_teacher' %}">{% trans 'By teacher' %}</a></li>
+                                <li><a href="{% url 'timetable' 'by_lesson' %}">{% trans 'By lesson' %}</a></li>
                                 <li><a href="{% url 'self_table' %}">{% trans 'My timetable' %} </a></li>
                             </ul>
                         </div>
                     </li>
-                    <li><a href="{% url 'students' %}">students</a></li>
-                    <li><a href="{% url 'lessons' %}">lessons</a></li>
+                    <li><a href="{% url 'students' %}">{% trans 'Students' %}</a></li>
+                    <li><a href="{% url 'lessons' %}">{% trans 'Lessons' %}</a></li>
                     {% if user.is_authenticated %}
-                        <li><a href="profile.html"">profile</a></li>
-                        <li><a href="{% url 'timetable' %}">timetable</a></li>
-                        <li><a href="{% url 'logout' %}">logout</a></li>
+                        <li><a href="{% url 'logout' %}">{% trans 'Logout' %}</a></li>
                     {% else %}
-                        <li><a href="{% url 'signup' %}">sign up</a></li>
-                        <li><a href="{% url 'login' %}">login</a></li>
+                        <li><a href="{% url 'signup' %}">{% trans 'Sign up' %}</a></li>
+                        <li><a href="{% url 'login' %}">{% trans 'Log in    ' %}</a></li>
                     {% endif %}
-                    <li><a href="contact.html">contact us</a></li>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -102,26 +67,19 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <h3>
-                    <small>About</small>
+                    <small>{% trans 'About' %}</small>
                 </h3>
-                <p>We strive to deliver a level of service that exceeds the expectations of our customers. <br/>
+                <p>{% trans 'Goals of the department' %} <br/>
                     <br/>
-                    If you have any questions about our products or services, please do not hesitate to contact us. We
-                    have friendly, knowledgeable representatives available seven days a week to assist you.</p>
+                    Department of Applied Mathematics and Informatics aims to produce well-educated, highly-qualified
+                    individuals that have the skills to use software on computer devices and automated systems and for
+                    the processing of financial information. The undergraduate program, based on the Bologna system, is
+                    4 years. Graduates from our department receive an academic degree in the area of Applied Mathematics
+                    and Informatics.</p>
             </div>
-            <div class="col-md-3">
-                <h3>
-                    <small>Tweets</small>
-                </h3>
-                <p><span>Tweet</span> <a href="#">@You</a><br/>
-                    Etiam egestas, ipsum posuere accumsan sollicitudin, nulla mauris volutpat sem, sit amet rutrum
-                    risus. </p>
-                <p><span>Tweet</span> <a href="#">@You</a><br/>
-                    Quisque porta tellus vitae adipiscing molestie. Mauris et lacus blandit, malesuada.</p>
-            </div>
-            <div class="col-md-3">
+            <div class="col-md-5">
                 <h3>
                     <small>Mailing list</small>
                 </h3>
@@ -137,28 +95,30 @@
             </div>
             <div class="col-md-3">
                 <h3>
-                    <small>Social</small>
+                    <small>{% trans 'Social' %}</small>
                 </h3>
-                <p>123 Business Way<br/>
-                    San Francisco, CA 94108<br/>
-                    USA<br/>
+                <p>{% trans '56, Chingiz Aytmatov st' %}<br/>
+                    {% trans 'Bishkek, 720044' %}<br/>
+                    {% trans 'Kyrgyzstan' %}<br/>
                     <br/>
-                    Phone: (888) 123-4567<br/>
-                    Fax: (887) 123-4567<br/>
+                    {% trans 'Phone 0312233445' %}<br/>
+                    {% trans 'Fax 0312122334' %}<br/>
                     <br/>
                 </p>
-                <div class="social__icons"><a href="#" class="socialicon socialicon-twitter"></a> <a href="#"
-                                                                                                     class="socialicon socialicon-facebook"></a>
-                    <a href="#" class="socialicon socialicon-google"></a> <a href="#"
-                                                                             class="socialicon socialicon-mail"></a>
+                <div class="social__icons"><a href="https://twitter.com/ktmu" class="socialicon socialicon-twitter"></a>
+                    <a href="https://www.facebook.com/groups/1718542528445626/"
+                       class="socialicon socialicon-facebook"></a>
+                    <a href="mailto:bilgi.fen@manas.edu.kg"
+                       class="socialicon socialicon-mail"></a>
                 </div>
             </div>
         </div>
         <hr>
-        <p class="text-center">&copy; Bishkek 2019</p>
+        <p class="text-center">© Copyright ABC Company. All Rights Reserved.</p>
     </div>
 </footer>
 {% block js %}
+
 
 {% endblock %}
 </body>

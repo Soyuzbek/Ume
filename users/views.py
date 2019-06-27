@@ -6,6 +6,7 @@ from django.urls import reverse
 from django.views import View
 from django.views.generic import ListView, DetailView
 
+from main.models import Lesson, Assign
 from users.forms import StudentSignUpForm, StudentLoginForm
 from users.models import User, Student, Teacher
 
@@ -71,12 +72,38 @@ class LoginView(View):
 class StudentsView(ListView):
     model = Student
     template_name = 'students.html'
+    ordering = 'user'
 
 
 class StudentItemView(DetailView):
     model = Student
     template_name = 'stud_item.html'
 
+    def get_context_data(self, **kwargs):
+        data = super().get_context_data(**kwargs)
+        lessons = Lesson.objects.filter(teacher=self.slug_field)
+        asst = Assign.objects.filter(lesson__in=lessons)
+        class_matrix = [[ True for i in range(12)] for j in range(5)]
+        time_slots = Assign.TIME_SLOTS
+        # rooms = Assign.ROOM_CHOICES
+        # teachers = Teacher.objects.all()
+        for i, d in enumerate(Assign.DAY_CHOICE):
+            t = 0
+            for j in range(len(time_slots) + 1):
+                if j == 0:
+                    class_matrix[i][0] = d[1]
+                    continue
+                # if j == 4 or j == 8:
+                #     continue
+                try:
+                    a = asst.filter(time_slots=time_slots[t][0], day=d[0])
+                    class_matrix[i][j] = a
+                except Assign.DoesNotExist:
+                    pass
+                t += 1
+        data['class_matrix'] = class_matrix
+        data['time_slots'] = time_slots
+        return data
 
 class TeachersView(ListView):
     model = Teacher

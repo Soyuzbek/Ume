@@ -199,7 +199,7 @@ CKEDITOR_CONFIGS = {
     },
 
 }
-
+CKEDITOR_IMAGE_BACKEND = 'pillow'
 GRAPH_MODELS = {
   'all_applications': True,
   'group_models': True,

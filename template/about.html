@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}
+    {% trans 'About us' %}
+{% endblock %}
+{% block content %}
+    <section class="main__middle__container">
+        <section class="recent-posts">
+            <div class="container">
+                {{ about.content|safe }}
+            </div>
+        </section>
+    </section>
+{% endblock %}

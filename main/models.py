@@ -1,4 +1,5 @@
 from ckeditor.fields import RichTextField
+from ckeditor_uploader.fields import RichTextUploadingField
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django.urls import reverse
@@ -8,8 +9,8 @@ from django.utils.translation import ugettext_lazy as _
 class Post(models.Model):
     name = models.CharField(_('name'), max_length=255)
     annotation = models.TextField(_('annotation'))
-    content = RichTextField(verbose_name=_('content'))
-    author = models.ForeignKey('users.User', on_delete=models.DO_NOTHING, verbose_name=_('author'))
+    content = RichTextUploadingField(verbose_name=_('content'))
+    author = models.ForeignKey('users.User', on_delete=models.SET_NULL, null=True, verbose_name=_('author'))
     date = models.DateTimeField(_('date'), auto_now=True)
 
     class Meta:
@@ -22,7 +23,7 @@ class Post(models.Model):
 
 class Notification(models.Model):
     name = models.TextField(_('name'))
-    content = RichTextField(verbose_name=_('content'))
+    content = RichTextUploadingField(verbose_name=_('content'))
     date = models.DateTimeField(_('date'), auto_now=True)
     expire = models.DateTimeField(_('date of expire'))
 
@@ -37,7 +38,7 @@ class Notification(models.Model):
 class Lesson(models.Model):
     id = models.CharField('ID', max_length=7, primary_key=True)
     name = models.CharField(_('name'), max_length=255)
-    teacher = models.ForeignKey('users.Teacher', on_delete=models.DO_NOTHING, verbose_name=_('teacher'), null=True,
+    teacher = models.ForeignKey('users.Teacher', on_delete=models.SET_NULL, null=True, verbose_name=_('teacher'),
                                 related_name='lessons')
     STATE_CHOICES = (
         ('ZD', _('Necessary')),
@@ -45,6 +46,7 @@ class Lesson(models.Model):
     )
     state = models.CharField(_('type'), max_length=5, choices=STATE_CHOICES)
     term = models.PositiveSmallIntegerField(_('term'), default=1)
+    topics = RichTextUploadingField(verbose_name=_('topics'), null=True, blank=True)
 
     class Meta:
         verbose_name = _('Lesson')
@@ -101,7 +103,7 @@ class Assign(models.Model):
         ('118', '118'),
         ('119', '119')
     )
-    lesson = models.ForeignKey(Lesson, models.DO_NOTHING, related_name='assign_set', verbose_name=_('lesson'))
+    lesson = models.ForeignKey(Lesson, models.CASCADE, related_name='assign_set', verbose_name=_('lesson'))
     room = models.CharField(_('room'), max_length=10, choices=ROOM_CHOICES)
     day = models.CharField(_('day'), max_length=15, choices=DAY_CHOICE)
     time_slots = models.CharField(_('time slot'), max_length=13, choices=TIME_SLOTS, default=TIME_SLOTS[0])

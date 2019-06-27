@@ -1,25 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ lesson.name }}</title>
-</head>
-<body>
-    {{ lesson.id }}
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block title %}
     {{ lesson.name }}
-    {{ lesson.state }}
-    {{ lesson.term }}
-    <a href="{{ lesson.teacher.get_absolute_url }}">{{ lesson.teacher }}</a>
+{% endblock %}
+{% block content %}
+    <section class="main__middle__container">
+    <div class="container">
+        <div class="row">
+            <h1 style="color: #1e1e1e; font-family: Arial;">{{ lesson.id }} {{ lesson.name }}</h1>
+            <h3 style="color: #1e1e1e; font-family: Arial;">{% trans 'Teacher' %}: {{ lesson.teacher }}</h3>
+            <h4 style="color: #1e1e1e; font-family: Arial;">{% trans 'state' %}: {{ lesson.state }}</h4>
 
+            <div class="col-sm-12">
+                <table class="dc_table_s9">
+                    <thead>
+                    <tr>
+                        <th class="col-sm-6">ID</th>
+                        <th class="col-sm-6">{% trans 'Students' %}</th>
+                    </tr>
+                    </thead>
+                    <tbody class="align-right">
+                    {% for student in lesson.student_list.all %}
+                        <tr>
+                            <td><a href="{{ student.get_absolute_url }}">{{ student.user.id }}</a></td>
+                            <td class="text-left">{{ student.user }}</td>
+                        </tr>
+                    {% endfor %}
 
-    <br>
-
-    {% for student in lesson.student_list.all %}
-        <a href="{{ student.get_absolute_url }}">
-            {{ student.user }}
-            {{ student.user.username }}
-        </a>
-    {% endfor %}
-
-</body>
-</html>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+        <section class="recent-posts">
+            <div class="container">
+                {{ lesson.topics.media }}
+                {{ lesson.topics|safe }}
+            </div>
+        </section>
+    </section>
+{% endblock %}

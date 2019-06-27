@@ -6,7 +6,7 @@ from users.models import User, Student, Teacher
 
 @register(User)
 class UserTransOptions(TranslationOptions):
-    # fields = (, )
+    fields = ('username', )
     pass
 
 

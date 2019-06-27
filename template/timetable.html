@@ -1,56 +1,87 @@
 {% extends 'base.html' %}
 {% load i18n %}
+{% block title %}
+    {% trans 'Timetable' %}
+{% endblock %}
 {% block content %}
-    <div class="container">
+    <section class="main__middle__container">
+        <div class="container recent-posts">
+            <div class="js_hide_gadget js_minimized">
+                <p>
+                    {% if teachers %}
+                        {% for teacher in teachers %}
+                            <a href="{% url 'teacher_table' teacher.user %}"
+                               class="dc_bevel_button blue">{{ teacher.user.username }}</a>
+                            </button>
+                        {% endfor %}
+                    {% endif %}
+                    {% if rooms %}
+                        {% for room in rooms %}
+                            <a href="{% url 'room' room.0 %}"
+                               class="dc_bevel_button blue">{{ room.0 }}</a>
+                        {% endfor %}
+                    {% endif %}
+                    {% if lessons %}
+                        {% for lesson in lessons %}
+                            <a href="{% url 'lesson_table' lesson.id %}"
+                               class="dc_bevel_button blue">{{ lesson.name }}</a>
+                        {% endfor %}
+
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="row">
         <div class="container">
 
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="text-center">
-                        {% trans 'Timetable' %}
-                    </h2>
-                </div>
+            <div class="col-md-12">
+                <h2 class="text-center">
+                    {% trans 'Timetable' %}
+                </h2>
+            </div>
 
-                <div id="no-more-tables">
-                    <div class="table-responsive">
-                        <table class="col-sm-12 table table-bordered table-striped table- cf " id="dataTable"
-                               width="100%" cellspacing="0">
-                            <thead class="cf">
-                            <tr>
-                                <th></th>
-                                {% for time_slot in time_slots %}
-                                    <th>{{ time_slot.0 }}</th>
+            <div id="no-more-tables">
+                <div class="table-responsive">
+                    <table class="dc_table_s12 table-bordered table-striped" style="width:100%;">
+                        <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            {% for time_slot in time_slots %}
+                                <th scope="col">{{ time_slot.0 }}</th>
+                            {% endfor %}
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for i in class_matrix %}
+                            <tr class="{% if forloop.counter|divisibleby:2 %}even{% else %}odd{% endif %}">
+                                {% for j in i %}
+                                    {% if forloop.counter == 1 %}
+                                        <th scope="row"><b>{{ j }}</b></th>
+                                    {% elif j == True %}
+                                        <td></td>
+                                    {% else %}
+                                        <td>
+                                            {% for k in j %}
+                                                <a href="{{ k.lesson.get_absolute_url }}">
+                                                    {{ k.lesson.name }} - {{ k.room }}
+                                                </a><br>
+                                            {% endfor %}
+                                        </td>
+                                    {% endif %}
                                 {% endfor %}
                             </tr>
-                            </thead>
-                            <tbody>
-                            {% for i in class_matrix %}
-                                <tr>
-                                    {% for j in i %}
-                                        {% if forloop.counter == 1 %}
-                                            <td><b>{{ j }}</b></td>
-                                        {% elif j == True %}
-                                            <td></td>
-                                        {% else %}
-                                            <td>
-                                                {% for k in j %}
-                                                    <a href="{{ k.lesson.get_absolute_url }}">
-                                                        {{ k.lesson.name }} - {{ k.room }}
-                                                    </a><br>
-                                                {% endfor %}
-                                            </td>
-                                        {% endif %}
-                                    {% endfor %}
-                                </tr>
-                            {% endfor %}
-                            </tbody>
-                        </table>
-                    </div>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                    <table class="col-sm-12 table table-bordered table-striped table- cf " id="dataTable"
+                           width="100%" cellspacing="0">
+
+                    </table>
                 </div>
             </div>
         </div>
-
-
     </div>
 
+    </div>
 {% endblock %}

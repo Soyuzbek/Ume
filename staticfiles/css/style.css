@@ -1207,7 +1207,7 @@ footer button.btn-primary:focus {
 
 /* ## REST CSS */
 
-ul.dropdown-menu {
+ul. dropdown-menu {
     display: block;
     -webkit-transition: all .25s ease;
     -moz-transition: all .25s ease;

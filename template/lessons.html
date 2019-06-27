@@ -1,18 +1,35 @@
+{% extends 'base.html' %}
 {% load i18n %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{% trans 'lessons' %}</title>
-</head>
-<body>
-{% for lesson in lesson_list %}
-    <a href="{{ lesson.id }}">
-    {{ lesson.id }}
-    {{ lesson.name }}
-    </a><br>
-    <a href="{{ lesson.teacher.get_absolute_url }}"></a>
-{% endfor %}
+{% block title %}
+    {% trans 'Lessons' %}
+{% endblock %}
+{% block content %}
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <table class="dc_table_s9">
+                        <thead>
+                        <tr>
+                            <th class="col-lg-4">ID</th>
+                            <th class="col-lg-4">{% trans 'Lesson' %}</th>
+                            <th class="col-lg-4">{% trans 'Teacher' %} </th>
+                        </tr>
+                        </thead>
+                        <tbody class="align-right">
+                        {% for lesson in lesson_list %}
+                            <tr>
+                                <td><a href="{{ lesson.get_absolute_url }}">{{ lesson.id }}</a></td>
+                                <td class="text-left">{{ lesson.name }}</td>
+                                <td class="text-left"><a href="{{ lesson.teacher.get_absolute_url }}">{{ lesson.teacher }}</a></td>
+                            </tr>
+                        {% endfor %}
 
-</body>
-</html>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </div>
+    </article>
+{% endblock %}

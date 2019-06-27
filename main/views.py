@@ -1,3 +1,5 @@
+from urllib.parse import unquote
+
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
 from django.utils.decorators import method_decorator
@@ -20,8 +22,27 @@ class IndexView(View):
     template_name = 'index.html'
 
     def get(self, request):
-        wallpaper_list = Wallpaper.objects.all()
-        advantage_list = Post.objects.filter(name='advantage').first()
+        wallpaper = Wallpaper.objects.first()
+        about = Post.objects.filter(name='About us').first()
+        advantage = Post.objects.filter(name='Your advantages').first()
+        rooms = Assign.ROOM_CHOICES
+        teachers = Teacher.objects.all()
+        return render(request, self.template_name, locals())
+
+
+class AdvantageView(View):
+    template_name = 'blog.html'
+
+    def get(self, request):
+        advantage = Post.objects.filter(name='Your advantages').first()
+        return render(request, self.template_name, locals())
+
+
+class AboutView(View):
+    template_name = 'about.html'
+
+    def get(self, request):
+        about = Post.objects.filter(name='About').first()
         return render(request, self.template_name, locals())
 
 
@@ -39,17 +60,21 @@ class TimetableView(View):
     model = Assign
     template_name = 'timetable.html'
 
-    def get(self, request):
+    def get(self, request, slug):
         asst = Assign.objects.all()
         class_matrix = [[True for i in range(12)] for j in range(5)]
         time_slots = Assign.TIME_SLOTS
-        rooms = Assign.ROOM_CHOICES
-        teachers = Teacher.objects.all()
+        if slug == 'by_room':
+            rooms = Assign.ROOM_CHOICES
+        elif slug == 'by_teacher':
+            teachers = Teacher.objects.all()
+        else:
+            lessons = Lesson.objects.all()
         for i, d in enumerate(Assign.DAY_CHOICE):
             t = 0
             for j in range(len(time_slots) + 1):
                 if j == 0:
-                    class_matrix[i][0] = d[0]
+                    class_matrix[i][0] = d[1]
                     continue
                 # if j == 4 or j == 8:
                 #     continue
@@ -59,13 +84,7 @@ class TimetableView(View):
                 except Assign.DoesNotExist:
                     pass
                 t += 1
-        context = {
-            'class_matrix': class_matrix,
-            'time_slots': time_slots,
-            'rooms': rooms,
-            'teachers': teachers
-        }
-        return render(request, self.template_name, context)
+        return render(request, self.template_name, locals())
 
 
 class RoomTable(View):
@@ -77,12 +96,12 @@ class RoomTable(View):
         class_matrix = [[ True for i in range(12)] for j in range(5)]
         time_slots = Assign.TIME_SLOTS
         rooms = Assign.ROOM_CHOICES
-        teachers = Teacher.objects.all()
+        # teachers = Teacher.objects.all()
         for i, d in enumerate(Assign.DAY_CHOICE):
             t = 0
             for j in range(len(time_slots) + 1):
                 if j == 0:
-                    class_matrix[i][0] = d[0]
+                    class_matrix[i][0] = d[1]
                     continue
                 # if j == 4 or j == 8:
                 #     continue
@@ -92,13 +111,7 @@ class RoomTable(View):
                 except Assign.DoesNotExist:
                     pass
                 t += 1
-        context = {
-            'class_matrix': class_matrix,
-            'time_slots': time_slots,
-            'rooms': rooms,
-            'teachers': teachers
-        }
-        return render(request, self.template_name, context)
+        return render(request, self.template_name, locals())
 
 
 class SelfTable(View):
@@ -116,13 +129,13 @@ class SelfTable(View):
             asst = Assign.objects.filter(lesson__in=lessons)
         class_matrix = [[ True for i in range(12)] for j in range(5)]
         time_slots = Assign.TIME_SLOTS
-        rooms = Assign.ROOM_CHOICES
-        teachers = Teacher.objects.all()
+        # rooms = Assign.ROOM_CHOICES
+        # teachers = Teacher.objects.all()
         for i, d in enumerate(Assign.DAY_CHOICE):
             t = 0
             for j in range(len(time_slots) + 1):
                 if j == 0:
-                    class_matrix[i][0] = d[0]
+                    class_matrix[i][0] = d[1]
                     continue
                 # if j == 4 or j == 8:
                 #     continue
@@ -132,31 +145,25 @@ class SelfTable(View):
                 except Assign.DoesNotExist:
                     pass
                 t += 1
-        context = {
-            'class_matrix': class_matrix,
-            'time_slots': time_slots,
-            'rooms': rooms,
-            'teachers': teachers
-        }
-        return render(request, self.template_name, context)
+        return render(request, self.template_name, locals())
 
 
 class TeacherTable(View):
     model = Assign
     template_name = 'timetable.html'
 
-    def get(self, request, id):
-        lessons = Lesson.objects.filter(teacher__user=id)
+    def get(self, request, slug):
+        teachers = Teacher.objects.all()
+        lessons = Lesson.objects.filter(teacher__user__username=unquote(slug))
         asst = Assign.objects.filter(lesson__in=lessons)
+        del lessons
         class_matrix = [[ True for i in range(12)] for j in range(5)]
         time_slots = Assign.TIME_SLOTS
-        rooms = Assign.ROOM_CHOICES
-        teachers = Teacher.objects.all()
         for i, d in enumerate(Assign.DAY_CHOICE):
             t = 0
             for j in range(len(time_slots) + 1):
                 if j == 0:
-                    class_matrix[i][0] = d[0]
+                    class_matrix[i][0] = d[1]
                     continue
                 # if j == 4 or j == 8:
                 #     continue
@@ -166,10 +173,30 @@ class TeacherTable(View):
                 except Assign.DoesNotExist:
                     pass
                 t += 1
-        context = {
-            'class_matrix': class_matrix,
-            'time_slots': time_slots,
-            'rooms': rooms,
-            'teachers': teachers
-        }
-        return render(request, self.template_name, context)
+        return render(request, self.template_name, locals())
+
+
+class LessonTable(View):
+    model = Assign
+    template_name = 'timetable.html'
+
+    def get(self, request, id):
+        lessons = Lesson.objects.all()
+        asst = Assign.objects.filter(lesson__id=id)
+        class_matrix = [[True for i in range(12)] for j in range(5)]
+        time_slots = Assign.TIME_SLOTS
+        for i, d in enumerate(Assign.DAY_CHOICE):
+            t = 0
+            for j in range(len(time_slots) + 1):
+                if j == 0:
+                    class_matrix[i][0] = d[1]
+                    continue
+                # if j == 4 or j == 8:
+                #     continue
+                try:
+                    a = asst.filter(time_slots=time_slots[t][0], day=d[0])
+                    class_matrix[i][j] = a
+                except Assign.DoesNotExist:
+                    pass
+                t += 1
+        return render(request, self.template_name, locals())

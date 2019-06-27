@@ -1,19 +1,31 @@
-{% load static %}
+{% extends 'base.html' %}
 {% load i18n %}
+{% block content %}
+    <article >
+        <div class="container">
+            <div class="row">
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{% trans 'students' %}</title>
-</head>
-<body>
-<p>this start</p><br>
-{% for student in student_list %}
-    <a href="{{ student.get_absolute_url }}">{{ student.user }}
-        {{ student.user.username }}</a><br>
-{% endfor %}
-<br>
-<p>this end</p>
-</body>
-</html>
+                <div class="col">
+                    <table class="dc_table_s9">
+                        <thead>
+                        <tr>
+                            <th class="col-lg-8">ID</th>
+                            <th class="col-lg-8">{% trans 'Student' %}</th>
+                        </tr>
+                        </thead>
+                        <tbody class="align-right">
+                        {% for student in student_list %}
+                            <tr>
+                                <td><a href="{{ student.get_absolute_url }}">{{ student.user.id }}</a></td>
+                                <td>{{ student.user }}</td>
+                            </tr>
+                        {% endfor %}
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </div>
+    </article>
+{% endblock %}

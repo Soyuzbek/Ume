@@ -8,31 +8,16 @@
     <section class="slider">
         <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
-                {% for wallpaper in wallpaper_list %}
-                    <div class="item active"><img data-src="images/slider/image_1975x740.jpg" alt="Second slide"
-                                                  src="{{ wallpaper.image.url }}">
-                        <!-- <div class="container"> -->
-                            <!-- <div class="carousel-caption"> -->
-                                <!-- <h1>Donec in metus quam nullam quis porta diam, sit amet tempor.</h1> -->
-                                <!-- <p><a class="btn btn-default btn-lg" href="#" role="button">Purchase</a><a -->
-                                        <!-- class="btn btn-default btn-lg" href="#" role="button">Details</a></p> -->
-                                <!-- <p>Quisque vestibulum odio at diam interdum, non ultrices lorem condimentum.</p> -->
-                            <!-- </div> -->
-                        <!-- </div> -->
-                    </div>
-                {% endfor %}
+                <div class="item active"><img data-src="images/slider/image_1975x740.jpg" alt="Second slide"
+                                              src="{{ wallpaper.image.url }}">
+                </div>
             </div>
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span
-                    class="glyphicon carousel-control-left"></span></a> <a class="right carousel-control"
-                                                                           href="#myCarousel" data-slide="next"><span
-                class="glyphicon carousel-control-right"></span></a></div>
     </section>
-    <!--end of slider section-->
     <section class="main__middle__container">
         <div class="container">
             <div class="row with__sep">
                 <h3 class="text-center">{% trans 'Our department teach not only natural science but also modern technology' %}
-                    </h3>
+                </h3>
                 <p class="text-center big-paragraph">{% trans 'Let you become a professional programmer with us' %}</p>
             </div>
             <div class="row no_padding icons__blocks text-center">
@@ -40,56 +25,17 @@
                     <span class="sep"></span><br/>
                     <!-- <small>Cras ornare tristique elit</small> -->
                 </h2>
-                {% for advantage in advantage_list%}
-                <div class="col-md-4">
-                    <h3>
-                        <small><a href="{{ advantage.absolute_url }}">{{ advantage.name }}</a></small>
-                    </h3>
-                    <!-- <p class="small-paragraph">Vestibulum auctor dapibus neque.</p> -->
-                    <img src="{{ advantage.image.url }}" alt="image" class="img-responsive img-rounded">
-                    <p>{{ advantage.annotation }}</p>
-                </div>
-                {% endfor %}
-                <p><a href="#" class="btn btn-primary btn-lg">Learn more</a></p>
+                <p><a href="{% url 'advantage' %}" class="btn btn-primary btn-lg">Learn more</a></p>
             </div>
         </div>
         <div class="row grey-info-block text-center">
             <div class="container">
-                <h2 class="page_title"><span>about us</span><br/>
+                <h2 class="page_title"><a href="{% url 'about' %}"><span>{% trans 'About us' %}</span></a><br/>
                     <span class="sep"></span><br/>
-                    <small>Cras ornare tristique elit</small>
+                    <small>{% trans 'Our department founded in 2007' %}</small>
                 </h2>
-                <div class="col-md-6"><img src="images/content__images/image_460x200.jpg" alt="image"
-                                           class="img-rounded img-responsive">
-                    <h3>
-                        <small>Commodo id natoque malesuada</small>
-                    </h3>
-                    <p class="small-paragraph">Phasellus ultrices nulla quis nibh. Quisque a lectus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
-                        eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit,
-                        posuere a, pede.</p>
-                </div>
-                <div class="col-md-6"><img src="images/content__images/image_460x200.jpg" alt="image"
-                                           class="img-rounded img-responsive">
-                    <h3>
-                        <small>Auctor etiam porttitor phasellus</small>
-                    </h3>
-                    <p class="small-paragraph">Phasellus ultrices nulla quis nibh. Quisque a lectus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
-                        eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit,
-                        posuere a, pede.</p>
-                </div>
+              {{ about.content|safe }}
                 <div class="clear"></div>
-            </div>
-        </div>
-        <div class="text-center three-blocks">
-            <div class="container">
-                <div class="row">
-                    <h2 class="">Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
-                        vulputate sem tristique cursus.</h2>
-                    <p class="">Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel,
-                        velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna.</p>
-                </div>
             </div>
         </div>
     </section>

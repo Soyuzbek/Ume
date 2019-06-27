@@ -1,10 +1,9 @@
 {% extends 'base.html' %}
-{% load static %}
 {% load i18n %}
 {% block title %}
 {% trans 'sign up' %}
 {% endblock %}
 {% block content %}
-    <a class="btn btn-lg btn-primary" href="{% url 'student_signup' %}"> sign up as a student</a>
-    <a class="btn btn-lg btn-primary" href="{% url 'teacher_signup' %}"> sign up as a teacher</a>
+    <a href="{% url 'student_signup' %}" class="dc_gradient_button large blue">{% trans 'sign up as a student' %}</a>
+    <a href="{% url 'teacher_signup' %}" class="dc_gradient_button large blue">{% trans 'sign up as a teacher' %}</a>
 {% endblock %}

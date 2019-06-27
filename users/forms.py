@@ -59,8 +59,8 @@ class StudentLoginForm(forms.ModelForm):
         model = User
         fields = ('id', 'password', 'next')
         widgets = {
-            'username': TextInput(attrs={'class': 'form-control'}),
-            'password': PasswordInput(attrs={'class': 'form-control'})
+            'id': TextInput(attrs={'class': 'form-control', 'placeholder': 'id'}),
+            'password': PasswordInput(attrs={'class': 'form-control', 'placeholder': 'password'})
         }
 
 

@@ -1520,3 +1520,9 @@ ul.dropdown-menu {
     padding: 0;
     width: 100%
 }
+.login-form {
+    width: 100%;
+    background-color: #f3f3f3;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}

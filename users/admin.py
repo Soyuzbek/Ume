@@ -59,6 +59,9 @@ class UserAdmin(TabbedTranslationAdmin):
     fieldsets += (_('Permissions'), {
         'fields': ('is_active', 'is_staff', 'is_superuser'),
     }),
+    list_display = ('id', 'username', 'email')
+    list_editable = ('email', )
+    list_display_links = ('username', )
     inlines = [StudentAdmin]
     actions = [send_message]
 

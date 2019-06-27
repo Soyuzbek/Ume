@@ -1,17 +1,24 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-<form action="{% url 'login' %}" method="post">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="login">
-</form>
-</body>
-</html>
+{% extends 'base.html' %}
+{% load i18n %}
+{% block content %}
+    <article class="login-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <form action="{% url 'login' %}" method="post">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="id">{% trans 'ID' %}</label>
+                            {{ form.id }}
+                        </div>
+                        <div class="form-group">
+                            <label for="password">{% trans 'Password' %}</label>
+                            {{ form.password }}
+                        </div>
+                        <button class="dc_gradient_button blue btn-block">{% trans 'Login' %}</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </article>
+{% endblock %}

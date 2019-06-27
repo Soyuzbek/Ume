@@ -1,16 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ student.user.username }}</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}
+    {{ student.user.username }}
+{% endblock %}
+{% block content %}
+    <article>
+        <div class="container">
+            <div class="row">
+                <h1 style="color: #1e1e1e;">{{ student.user.id }} {{ student.user }}</h1>
+                <h2>{% trans 'Lessons for this term' %}</h2>
+                <div class="col-lg-12">
+                    <table class="dc_table_s9">
+                        <thead>
+                        <tr>
+                            <th class="col-lg-3">ID</th>
+                            <th class="col-lg-6">{% trans 'Lessons' %}</th>
+                            <th class="col-lg-3">{% trans 'State' %}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for lesson in student.lessons.all %}
+                            <tr>
+                                <td><a href="{{ lesson.get_absolute_url }}">{{ lesson.id }}</a></td>
+                                <td>{{ lesson.name }}</td>
+                                <td>{{ lesson.state }}</td>
+                            </tr>
+                        {% endfor %}
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </article>
+{% endblock %}
 {{ student.user }}
 {{ student.user.username }}<br>
 lessons <br>
 {% for lesson in student.lessons.all %}
     <a href="{{ lesson.get_absolute_url }}">{{ lesson.id }}
-    {{ lesson.name }}</a><br>
+        {{ lesson.name }}</a><br>
 {% endfor %}
 
 </body>
