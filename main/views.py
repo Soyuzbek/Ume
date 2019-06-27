@@ -154,7 +154,9 @@ class TeacherTable(View):
 
     def get(self, request, slug):
         teachers = Teacher.objects.all()
-        lessons = Lesson.objects.filter(teacher__user__username=unquote(slug))
+        teacher = Teacher.objects.get(user__username=unquote(slug))
+        lessons = Lesson.objects.filter(teacher=teacher)
+        del teacher
         asst = Assign.objects.filter(lesson__in=lessons)
         del lessons
         class_matrix = [[ True for i in range(12)] for j in range(5)]
