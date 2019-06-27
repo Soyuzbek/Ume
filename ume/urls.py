@@ -34,6 +34,7 @@ urlpatterns = [
     path('advantage/', AdvantageView.as_view(), name='advantage'),
     path('about/', AboutView.as_view(), name='about'),
 
+
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

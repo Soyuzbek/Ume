@@ -7,8 +7,9 @@ from django.utils.translation import gettext_lazy as _
 from django.views import View
 from django.views.generic import ListView, DetailView
 
-from main.models import Wallpaper, Post, Lesson, Assign
+from main.models import Wallpaper, Post, Lesson, Assign, Notification
 from users.models import Teacher
+
 
 class LanguageView(View):
 
@@ -22,6 +23,7 @@ class IndexView(View):
     template_name = 'index.html'
 
     def get(self, request):
+        notification = Notification.objects.first()
         wallpapers = Wallpaper.objects.all()
         about = Post.objects.filter(name=_('About us')).first()
         advantage = Post.objects.filter(name=_('Your advantages')).first()
