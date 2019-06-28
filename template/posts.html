@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block title %}
+    {% trans 'Notifications' %}
+{% endblock %}
+{% block content %}
+    <section class="main__middle__container">
+        <section class="recent-posts">
+            <div class="container">
+                <div class="row no-margin nothing text-center">
+                                <img src="/media/image/blog.png" alt="blog" class="absolute__icon text-center">
+
+                    <h2 class="page__title">{% trans 'Our blog' %}</h2>
+                    <div class="seper"></div>
+                    <p class="small-paragraph">{% trans 'Our recent articles for you' %}</p>
+                    <div class="col-md-9 text-left">
+                        {% for post in post_list %}
+                            <article><img src="{{ post.image.url }}" alt="pic1" class="pull-left img-responsive"
+                                          width="500px" height="500px">
+                                <div class="text">
+                                    <p class="small-paragraph">{{ post.author }}</p><br>
+                                    <h3><a href="">{{ post.name }}</a></h3>
+                                    <p>{{ post.annotation }}</p>
+                                    <h3>
+                                        <small><a href="{% url 'post' post.id %}">{% trans 'Read More' %}&gt;</a>
+                                        </small>
+                                    </h3>
+                                </div>
+                                <div class="clearfix"></div>
+                            </article>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+{% endblock %}

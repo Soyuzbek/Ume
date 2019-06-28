@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block title %}
+    {% trans 'Notifications' %}
+{% endblock %}
+{% block content %}
+    <section class="main__middle__container">
+        <section class="recent-posts">
+            <div class="container">
+                <div class="row no-margin nothing text-center">
+                                <img src="/media/image/blog.png" alt="blog" class="absolute__icon text-center">
+
+                    <h2 class="page__title">{% trans 'Our blog' %}</h2>
+                    <div class="seper"></div>
+                    <p class="small-paragraph">{% trans 'Read this article and enjoy' %}</p>
+                    <div class="col-md-12">
+                            <article><img src="{{ post.image.url }}" alt="pic1" class="" width="900px">
+                                <div class="row">
+                                    <p class="small-paragraph">{{ post.author }}</p><br>
+                                    <h3><a href="">{{ post.name }}</a></h3>
+                                    <p>{{ post.annotation }}</p>
+                                    <div class="text-left">
+                                        {{ post.content|safe }}
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+{% endblock %}

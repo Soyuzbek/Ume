@@ -4,9 +4,10 @@ from django.contrib import admin
 from django.urls import path, include
 
 from main.views import LanguageView, IndexView, LessonsView, LessonItemView, TimetableView, RoomTable, SelfTable, \
-    TeacherTable, LessonTable, AdvantageView, AboutView
+    TeacherTable, LessonTable, AdvantageView, AboutView, PostItemView, PostsView
 from users.views import SignUpView, StudentSignUpView, TeacherSignUpView, LogoutView, LoginView, StudentsView, \
     StudentItemView, TeachersView, TeacherItemView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -33,6 +34,8 @@ urlpatterns = [
     path('timetable/by_lessons/<str:id>/', LessonTable.as_view(), name='lesson_table'),
     path('advantage/', AdvantageView.as_view(), name='advantage'),
     path('about/', AboutView.as_view(), name='about'),
+    path('posts/', PostsView.as_view(), name='posts'),
+    path('post/<int:pk>', PostItemView.as_view(), name='post'),
 
 
 ]

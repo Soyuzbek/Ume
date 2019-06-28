@@ -54,7 +54,7 @@
                     </li>
                     <li><a href="{% url 'students' %}">{% trans 'Students' %}</a></li>
                     <li><a href="{% url 'lessons' %}">{% trans 'Lessons' %}</a></li>
-                    <li><a href="#">{% trans 'Articles' %}</a></li>
+                    <li><a href="{% url 'posts' %}">{% trans 'Articles' %}</a></li>
                     {% if user.is_authenticated %}
                         <li><a href="{% url 'logout' %}">{% trans 'Logout' %}</a></li>
                     {% else %}

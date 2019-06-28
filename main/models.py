@@ -12,6 +12,7 @@ class Post(models.Model):
     content = RichTextUploadingField(verbose_name=_('content'))
     author = models.ForeignKey('users.User', on_delete=models.SET_NULL, null=True, verbose_name=_('author'))
     date = models.DateTimeField(_('date'), auto_now=True)
+    image = models.ImageField(_('image'), upload_to='image', null=True)
 
     class Meta:
         verbose_name = _('Post')

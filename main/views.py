@@ -204,3 +204,16 @@ class LessonTable(View):
                     pass
                 t += 1
         return render(request, self.template_name, locals())
+
+
+class PostsView(View):
+    model = Post
+    template_name = 'posts.html'
+
+    def get(self, request,):
+        post_list = Post.objects.all()
+        return render(request, self.template_name, locals())
+
+class PostItemView(DetailView):
+    model = Post
+    template_name = 'post.html'
