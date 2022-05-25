@@ -17,7 +17,7 @@ mysqlclient==1.4.2.post1
 Pillow==8.2.0
 polib==1.1.0
 pydotplus==2.0.2
-PyJWT==1.7.1
+PyJWT==2.4.0
 PySocks==1.7.0
 pytz==2018.9
 requests==2.21.0
